@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/header.scss"],"names":[],"mappings":"AAGI,oBACI,iBAAA","file":"header.css","sourcesContent":[".header{\r\n\r\n\r\n    &__first-line{\r\n        background-color: #fff;\r\n    }\r\n}"]}
