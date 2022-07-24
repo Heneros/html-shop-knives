@@ -1,7 +1,17 @@
 .header {
+    background-color: $codgray;
+
 
 
     &__first-line {
-        background-color: $codgray;
+        padding: 25px 0;
+    }
+
+    &__left {
+        grid-column: 10 span;
+    }
+
+    &__right {
+        grid-column: 2 span;
     }
 }

@@ -3,11 +3,16 @@
         display: flex;
         align-self: center;
 
-        &__item {
-            // &:not(:first-child) {
-            margin-right: 60px;
-            // }
 
-        }
+    }
+
+    &__item {
+        margin-right: 60px;
+    }
+
+    &__link {
+        // font: $small-book;
+        font-family: $font-family;
+        color: #fff;
     }
 }
