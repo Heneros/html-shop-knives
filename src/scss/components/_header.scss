@@ -14,4 +14,11 @@
     &__right {
         grid-column: 2 span;
     }
+
+    &__profile {
+        display: flex;
+        flex-direction: row-reverse;
+        color: #fff;
+     
+    }
 }
