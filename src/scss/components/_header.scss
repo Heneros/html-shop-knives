@@ -4,6 +4,10 @@
         background-color: $codgray;
     }
 
+    &__container {
+        align-items: center;
+    }
+
     &__left {
         grid-column: 10 span;
     }
@@ -57,7 +61,6 @@
     }
 
 
-
     &__second-line {
         align-items: center;
     }
@@ -68,9 +71,23 @@
         }
     }
 
+
+
     &__search-field {
+        position: relative;
         width: 377px;
         margin: auto;
+
+        &::after {
+            content: "";
+            background-image: url('../img/search.svg');
+            height: 11.5px;
+            width: 11.5px;
+            position: absolute;
+            bottom: 18px;
+            left: 25px;
+        }
+
     }
 
     &__location {
@@ -116,5 +133,6 @@
             height: 26px;
         }
     }
+
 
 }
