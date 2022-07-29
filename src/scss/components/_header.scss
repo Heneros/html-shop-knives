@@ -237,13 +237,28 @@
         background-color: #000;
     }
 
-    .header__third-line {
-        .nav__item {
-            margin: unset;
-            padding: 24px 116px 24px 0;
-        }
+
+
+    &__menu-main {
+        display: flex;
     }
 
+    .menu-item {
+        font: $small-book;
+        color: #fff;
+        margin: 24px 116px 24px 0;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: $tuliptree;
+            border-bottom: 2px solid $tuliptree;
+            margin-bottom: 2px;
+            // padding-bottom: 20px;
+        }
+
+        // padding-right: 115px;
+    }
 
 
 }
