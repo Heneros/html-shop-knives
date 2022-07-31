@@ -259,6 +259,43 @@
 
         // padding-right: 115px;
     }
+}
 
+.select-header {
+
+
+    &__select {}
+
+    &__header {}
+
+    &__main {
+        background-color: #000;
+        display: flex;
+        // justify-content: center;
+        justify-content: space-evenly;
+        position: absolute;
+        left: 0;
+        right: 193px;
+        bottom: 0;
+        width: 100%;
+    }
+
+    &__column {
+        // margin: 0 31px;
+    }
+
+
+    &__menu {}
+
+    &__link {
+        font: $small-book;
+        color: #fff;
+        cursor: pointer;
+        // transition: color 0.3s ease-in-out;
+    }
+
+    &__item {
+        padding: 10px 0;
+    }
 
 }
