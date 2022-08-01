@@ -273,21 +273,54 @@
     &__main {
         background-color: #000;
         display: flex;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         position: absolute;
         left: 0;
         right: 193px;
         top: 220px;
         width: 100%;
+
+
+
     }
 
     &__column {
+        position: relative;
+
         // margin: 0 31px;
-        // grid-column: 2 span;
+        // grid-column: 1 span;
         // width: 20%;
         // flex-basis: 15%;
+        &::before {
+            content: "";
+            // border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, .3);
+            height: 1px;
+            top: 55px;
+            width: 100%;
+            display: block;
+            position: absolute;
+        }
+
+        &:last-child {
+            margin-right: 210px;
+        }
+
+        &:first-child {
+            margin-left: 50px;
+        }
+
+
+
+        // 
     }
 
+    &__column-title {
+        padding: 20px 0;
+        font: $bold-book-middle ;
+        color: #fff;
+
+    }
 
     &__menu {}
 
@@ -301,5 +334,7 @@
     &__item {
         padding: 10px 0;
     }
+
+
 
 }
