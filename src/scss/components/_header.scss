@@ -246,15 +246,17 @@
     .menu-item {
         font: $small-book;
         color: #fff;
-        margin: 24px 116px 24px 0;
+        // margin: 24px 116px 24px 0;
+        margin: 24px 173px 24px 0;
         cursor: pointer;
         transition: color 0.3s ease-in-out;
 
         &:hover {
             color: $tuliptree;
             border-bottom: 2px solid $tuliptree;
-            margin-bottom: 2px;
-            // padding-bottom: 20px;
+            // margin-bottom: 2px;
+            padding-bottom: 18px;
+            // margin-bottom: 24px;
         }
 
         // padding-right: 115px;
@@ -271,17 +273,19 @@
     &__main {
         background-color: #000;
         display: flex;
-        // justify-content: center;
-        justify-content: space-evenly;
+        justify-content:space-evenly;
         position: absolute;
         left: 0;
         right: 193px;
-        bottom: 0;
+        top: 220px;
         width: 100%;
     }
 
     &__column {
         // margin: 0 31px;
+        // grid-column: 2 span;
+        // width: 20%;
+        // flex-basis: 15%;
     }
 
 
