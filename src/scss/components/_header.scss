@@ -279,7 +279,7 @@
         right: 193px;
         top: 220px;
         width: 100%;
-
+        display: none;
 
 
     }
@@ -369,5 +369,8 @@
         color: $tuliptree;
     }
 
+    &__visible {
+        display: flex;
+    }
 
 }

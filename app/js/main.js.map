@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA","file":"main.js","sourcesContent":[""]}
+{"version":3,"sources":["menu.js"],"names":["btnLink","document","querySelector","addEventListener"],"mappings":"aAAA,IAAMA,QAAUC,SAASC,cAAc,mBAEvCF,QAAQG,iBAAiB,SAAS","file":"main.js","sourcesContent":["const btnLink = document.querySelector('.js-select-head');\r\n\r\nbtnLink.addEventListener('click', function () {\r\n\r\n});"]}
