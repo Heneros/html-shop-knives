@@ -247,16 +247,26 @@
         font: $small-book;
         color: #fff;
         // margin: 24px 116px 24px 0;
-        margin: 24px 173px 24px 0;
+        margin: 24px 173px 0px 0;
         cursor: pointer;
         transition: color 0.3s ease-in-out;
+        padding-bottom: 24px;
+        border-bottom: 2px solid transparent;
 
         &:hover {
             color: $tuliptree;
             border-bottom: 2px solid $tuliptree;
-            // margin-bottom: 2px;
-            padding-bottom: 18px;
-            // margin-bottom: 24px;
+
+        }
+
+        &:focus {
+            color: $tuliptree;
+            border-bottom: 2px solid $tuliptree;
+        }
+
+        &:active {
+            color: $tuliptree;
+            border-bottom: 2px solid $tuliptree;
         }
 
         // padding-right: 115px;
@@ -266,7 +276,7 @@
 .select-header {
 
 
-    &__select {}
+
 
     &__header {}
 
@@ -279,7 +289,9 @@
         right: 193px;
         top: 220px;
         width: 100%;
-        display: none;
+        // display: none;
+        visibility: hidden;
+        opacity: 0;
 
 
     }
@@ -369,8 +381,16 @@
         color: $tuliptree;
     }
 
-    &__visible {
-        display: flex;
-    }
+    // &__visible {
+    //     // display: flex;
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+
+}
+
+.select-header__visible {
+    opacity: 1;
+    visibility: visible;
 
 }

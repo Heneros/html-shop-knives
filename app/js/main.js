@@ -1,2 +1,2 @@
-"use strict";var btnLink=document.querySelector(".js-select-head");btnLink.addEventListener("click",(function(){}));
+"use strict";var btnLink=document.querySelectorAll(".js-select"),menuOpen=document.querySelector(".select-header__main");
 //# sourceMappingURL=main.js.map

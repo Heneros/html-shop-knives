@@ -1,5 +1,3 @@
-const btnLink = document.querySelector('.js-select-head');
+const btnLink = document.querySelectorAll('.js-select');
+const menuOpen = document.querySelector('.select-header__main');
 
-btnLink.addEventListener('click', function () {
-
-});
