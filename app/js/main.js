@@ -1,2 +1,2 @@
-"use strict";var btnLink=document.querySelectorAll(".js-select"),menuOpen=document.querySelector(".select-header__main");btnLink.forEach((function(e){e.addEventListener("click",(function(){menuOpen.classList.toggle("select-header__visible")}))}));
+"use strict";var btnLink=document.querySelectorAll(".js-select"),menuOpen=document.querySelector(".select-header__main"),menuDropdown=document.querySelector(".header__menu-dropdown");btnLink.forEach((function(e){e.addEventListener("click",(function(e){document.querySelectorAll(".header__menu-dropdown").forEach((function(e){e.classList.remove("select-header__visible")})),e.currentTarget.closest(".header__menu-dropdown").classList.add("select-header__visible")}))}));
 //# sourceMappingURL=main.js.map

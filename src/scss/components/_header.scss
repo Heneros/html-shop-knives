@@ -348,7 +348,7 @@
 
     }
 
-    &__menu {}
+
 
     &__link {
         font: $small-book;
@@ -389,8 +389,11 @@
 
 }
 
-.select-header__visible {
+// .header__menu-dropdown .select-header__visible .select-header__main {
+//     opacity: 1;
+//     visibility: visible;
+// }
+.select-header__visible .select-header__main {
     opacity: 1;
     visibility: visible;
-
 }
