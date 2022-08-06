@@ -289,11 +289,10 @@
         right: 193px;
         top: 220px;
         width: 100%;
+        z-index: 99999;
         // display: none;
         visibility: hidden;
         opacity: 0;
-
-
     }
 
     &__column {
@@ -393,6 +392,12 @@
 //     opacity: 1;
 //     visibility: visible;
 // }
+
+.select-header__visible {
+    opacity: 1;
+    visibility: visible;
+}
+
 .select-header__visible .select-header__main {
     opacity: 1;
     visibility: visible;
