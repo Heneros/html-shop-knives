@@ -1,0 +1,22 @@
+.slider-homepage {
+    background-image: url('../img/homepage-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__swiper {
+        flex: 0 1 75%;
+    }
+
+    &__product-image {
+        flex: 0 1 25%;
+
+        img {}
+    }
+}
