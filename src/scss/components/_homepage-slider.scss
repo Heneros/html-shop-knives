@@ -27,4 +27,15 @@
     }
 
     &__title {}
+
+    &__btn {
+        // padding: 18px 55px;
+        background-color: $tuliptree;
+        box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+        border-radius: 3px;
+        outline: none;
+        font: $middle-book-higher;
+        color: #fff;
+        cursor: pointer;
+    }
 }
