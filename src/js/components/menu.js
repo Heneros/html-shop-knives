@@ -32,6 +32,8 @@ document.querySelectorAll('.js-select').forEach(e => {
                     document.querySelector(`[data-target=${menu}]`).classList.remove('open');
                 }
             }
+
+            
         })
     })
 });
