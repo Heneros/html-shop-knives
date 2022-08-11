@@ -92,13 +92,18 @@
         }
     }
 
-
+    // &__navigation {
+    //     display: flex;
+    //     position: relative;
+    // }
 
     &__pagination {
         color: #fff;
         font-weight: 600;
         font-size: 20px;
         line-height: 46px;
+        max-width: 1px;
+        width: 1px;
     }
 
     &__pagination>b {
