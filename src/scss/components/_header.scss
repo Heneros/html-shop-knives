@@ -334,26 +334,24 @@
             margin-left: 163px;
         }
 
-
-
-        // 
     }
 
     &__column-title {
-        // padding: 5px 0;
+
         margin-top: 9px;
         font: $bold-book-middle ;
         color: #fff;
-
     }
-
-
 
     &__link {
         font: $small-book;
         color: #fff;
         cursor: pointer;
-        // transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: $tuliptree;
+        }
     }
 
     &__item {
@@ -388,10 +386,6 @@
 
 }
 
-// .header__menu-dropdown .select-header__visible .select-header__main {
-//     opacity: 1;
-//     visibility: visible;
-// }
 
 .select-header__visible {
     opacity: 1;
