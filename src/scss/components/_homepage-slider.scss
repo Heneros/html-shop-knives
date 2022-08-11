@@ -146,4 +146,34 @@
         max-width: 75px
     }
 
+    &__icons {
+        display: flex;
+
+    }
+
+    &__icon {
+        flex: 0 1 25%;
+        color: #fff;
+        text-align: center;
+        font: $middle-book-higher;
+
+        &:not(:last-child) {
+            margin-right: 182px;
+        }
+
+        margin: 60px 0 60px 0;
+    }
+
+    &__icon-block {
+        text-align: center;
+        margin-bottom: 20px;
+        // margin: 0 auto;
+
+        img {
+            height: 65px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
 }
