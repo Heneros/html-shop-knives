@@ -8,7 +8,7 @@ const swiper = new Swiper('.slider-homepage__swiper', {
         renderCustom: function (swiper, current, total) {
             let indT = total >= 10 ? total : `0${total}`
             let indC = current >= 10 ? current : `0${current}`
-            return `<b>${indC}</b><span></span> ${indT}`
+            return `<b>${indC}</b> / ${indT}`
                 +
                 `<span class='swiper-pagination-bullet'></span>`
 
