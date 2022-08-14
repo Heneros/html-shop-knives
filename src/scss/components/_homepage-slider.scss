@@ -75,13 +75,7 @@
         margin-top: 62px;
     }
 
-    .swiper-pagination {
-        display: flex;
-    }
 
-    &__scrollbar {
-        display: flex;
-    }
 
     .swiper-pagination-bullet {
         background-color: #fff;
@@ -118,18 +112,30 @@
         }
     }
 
-    // &__navigation {
-    //     display: flex;
-    //     position: relative;
-    // }
+    &__navigation {
+        display: flex;
+
+        position: relative;
+    }
+
+
+    &__pagination {
+        display: flex;
+        left: 93px;
+
+    }
+
+    &__scrollbar {
+        display: flex;
+        bottom: 25px !important;
+    }
 
     &__pagination {
         color: #fff;
         font-weight: 600;
         font-size: 20px;
         line-height: 46px;
-        max-width: 1px;
-        width: 1px;
+        left: 104px;
     }
 
     &__pagination>b {
@@ -144,11 +150,11 @@
         font-size: 24px;
         margin: 0 4px;
 
-        // &:after {
-        //     content: "/";
-        //     display: inline-block;
-        //     vertical-align: middle;
-        // }
+        &:after {
+            content: "/";
+            display: inline-block;
+            vertical-align: middle;
+        }
     }
 
     &__scrollbar {
