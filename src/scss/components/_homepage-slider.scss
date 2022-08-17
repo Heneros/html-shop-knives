@@ -1,9 +1,8 @@
 .slider-homepage {
     background-image: url('../img/homepage-bg-img.png');
-    // background-image: url('../img/bg-img.png');
     background-repeat: no-repeat;
-    // background-position: center center;
     background-size: cover;
+    margin-top: -4px;
 
     &__block {
         display: flex;
@@ -19,11 +18,6 @@
     &__product-image {
         flex: 0 1 30%;
         position: relative;
-
-        img {
-            // max-height: 500px;
-            // max-width: 450px;
-        }
 
         &::before {
             content: "";

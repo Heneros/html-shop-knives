@@ -1,0 +1,29 @@
+.cards {
+    margin-top: 100px;
+
+
+}
+
+.cards-items {
+    display: grid;
+    grid-template-columns: 511px 511px 511px;
+    gap: 30px;
+
+
+}
+
+.cards-item {
+    color: #141414;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+    &__text {
+        padding: 30px 0 0 30px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        color: #000;
+    }
+}
