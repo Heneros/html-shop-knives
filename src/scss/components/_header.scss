@@ -78,6 +78,7 @@
         width: 377px;
         margin: auto;
         margin-left: 158px;
+        // transition: all .5s ease-out;
 
         &::after {
             content: "";
@@ -87,6 +88,17 @@
             position: absolute;
             bottom: 18px;
             left: 25px;
+        }
+
+        input {
+
+            &:active {
+                border: 1px solid $tuliptree;
+            }
+
+            &:focus {
+                border: 1px solid $tuliptree;
+            }
         }
 
     }
@@ -252,21 +264,42 @@
         transition: color 0.3s ease-in-out;
         padding-bottom: 24px;
         border-bottom: 2px solid transparent;
+        position: relative;
 
         &:hover {
             color: $tuliptree;
-            border-bottom: 2px solid $tuliptree;
-
+            // border-bottom: 2px solid $tuliptree;
         }
 
-        &:focus {
-            color: $tuliptree;
-            border-bottom: 2px solid $tuliptree;
+        // &:focus {
+        //     color: $tuliptree;
+        //     border-bottom: 2px solid $tuliptree;
+        // }
+
+        // &:active {
+        //     color: $tuliptree;
+        //     border-bottom: 2px solid $tuliptree;
+        // }
+
+        &:after,
+        &:before {
+            display: block;
+            content: '';
+            border-bottom: solid 1px $tuliptree;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
         }
 
-        &:active {
-            color: $tuliptree;
-            border-bottom: 2px solid $tuliptree;
+        &:before {
+            position: absolute;
+            // bottom: 1.2em;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        &:hover:before {
+            transform: scaleX(1);
         }
 
         // padding-right: 115px;
