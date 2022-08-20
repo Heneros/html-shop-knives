@@ -2,14 +2,6 @@
 const swiper = new Swiper('.slider-homepage__swiper', {
     speed: 800,
     spaceBetween: 100,
-    // on: {
-    //     slideChange: function () {
-    //         const index_currentSlide = swiper.realIndex;
-    //         const currentSlide = swiper.slides[index_currentSlide]
-    //         //
-    //         currentSlide.style.background = "red";
-    //     },
-    // },
     pagination: {
         el: '.swiper-pagination',
         type: 'custom',
@@ -24,12 +16,6 @@ const swiper = new Swiper('.slider-homepage__swiper', {
     }
 
 });
-///<span class='swiper-pagination-bullet'></span>
-// `<span class='swiper-pagination-bullet ${indC}: swiper-pagination-bullet-active'></span>`
-// +
-//     `<span class='${index_curreentSlid} ${curClass}'></span>
-//                <span class='${index_curreentSlid}'></span>
-//                 `
 
 ///Add span
 const slider__heading = document.querySelectorAll(".slider-homepage__title");

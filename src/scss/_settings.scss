@@ -45,7 +45,6 @@ img {
     width: 100%;
     outline: none;
     height: 41px;
-    // transition: .5s;
     transition: all .3s ease-out;
 }
 
@@ -61,4 +60,15 @@ img {
     &:hover {
         opacity: 0.9;
     }
+}
+
+.title {
+    font: $bold-book-high;
+    letter-spacing: 0.05em;
+    color: $codgray;
+}
+
+.sub-title {
+    color: $codgray;
+    font: $middle-book-higher;
 }
