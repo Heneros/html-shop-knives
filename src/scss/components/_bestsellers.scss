@@ -27,13 +27,11 @@
 
     &__stars {
         display: inline-flex;
-
-        img {}
     }
 
     &__top {
-        // display: flex;
-        // flex-direction: column;
+        border-bottom: 1px solid rgba(20, 20, 20, 0.5);
+        margin-bottom: 25px;
     }
 
     &__line {
@@ -49,11 +47,35 @@
         display: flex;
     }
 
-    &__size {
+    &__size,
+    &__structure {
         font: $middle-book;
+        text-transform: capitalize;
     }
 
     &__reviews {
         font: $small-book;
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-around;
+         
+        img{
+            width: unset;
+        }
+    }
+    &__price{
+        flex-basis: 70%;
+        line-height: 34px;
+        font: $middle-book-higher;
+        color: $codgray ;  
+    }
+    &__icons{
+        flex-basis: 30%;
+        display: flex;
+    }
+    &__btn{
+        margin: 30px 0; 
     }
 }
