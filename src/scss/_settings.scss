@@ -73,7 +73,7 @@ img {
     font: $middle-book-higher;
 }
 
-.btn-yellow{
+.btn-yellow {
     background-color: $tuliptree;
     color: #fff;
     width: 100%;
@@ -85,4 +85,13 @@ img {
     padding: 17px 0;
     text-align: center;
     cursor: pointer;
+
+    &::after {
+        content: "";
+        background-image: url('../img/cart-white.svg');
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        margin-left: 15px;
+    }
 }
