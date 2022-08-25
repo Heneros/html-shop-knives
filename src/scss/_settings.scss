@@ -95,3 +95,28 @@ img {
         margin-left: 15px;
     }
 }
+
+.catalog {
+    font: $middle-book-high;
+    letter-spacing: 0.05em;
+    color: rgba(20, 20, 20, 0.58);
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url('../img/sprite.svg#arrow');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 8px;
+        right: -27px;
+        transform: rotate(270deg);
+        width: 16px;
+        height: 10px;
+    }
+}
+
+.text-above {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
