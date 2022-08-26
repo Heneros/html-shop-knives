@@ -1,0 +1,31 @@
+.articles {
+    margin-top: 120px;
+}
+
+.articles-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 4fr));
+    column-gap: 20px;
+}
+
+.article-item {
+    background: #FEFEFE;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.article-text {
+    padding: 0 28px;
+}
+
+.article-title {
+    padding: 20px 0 6px 0;
+    font: $middle-book-higher;
+    line-height: 34px;
+    color: $codgray;
+    display: block;
+}
+
+.article-date {
+    color: $silver;
+    font: $small-book;
+}
