@@ -1,0 +1,29 @@
+.description-company {
+    margin-top: 120px;
+    background-image: url('../img/bg-img-description.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px;
+    margin-left: -5px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    &__title {
+        color: $tuliptree;
+        font: $bold-book-high;
+        text-align: center;
+    }
+
+    &__paragraph {
+        text-align: left;
+        color: #fff;
+        font: $small-book-premiddle;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+    }
+
+}
