@@ -1,0 +1,49 @@
+.banners-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(732px, 2fr));
+    column-gap: 40px;
+    margin-top: 120px;
+}
+
+.banner-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.banner-bg-img {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+}
+
+.banner-text {
+    padding: 30px 31px;
+
+    .read-more {
+        margin-top: 25px;
+
+        padding: 12px 103px;
+        font: $middle-book-high;
+        line-height: 46px;
+        background-color: $tuliptree;
+        color: #fff;
+    }
+}
+
+.banner-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #000;
+    @include strip;
+}
+
+.banner-description {
+    margin-top: 58px;
+    margin-bottom: 50px;
+    width: 43%;
+    font: $small-book-middle;
+
+}

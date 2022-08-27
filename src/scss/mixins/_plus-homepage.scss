@@ -15,3 +15,15 @@
         margin-top: 5px;
     }
 }
+
+@mixin strip {
+    &::after {
+        content: "";
+        background-color: $tuliptree;
+        height: 1px;
+        width: 68px;
+        position: relative;
+        top: 15px;
+        display: block;
+    }
+}

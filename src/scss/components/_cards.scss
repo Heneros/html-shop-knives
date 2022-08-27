@@ -27,12 +27,7 @@
         z-index: 5;
     }
 
-    // &__bg-container {
-    //     flex: 1 0 50%;
-    // }
-
     &__bg-img {
-        // flex-basis: 25%;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -44,7 +39,7 @@
         // z-index: 9;
 
         &:hover {
-            background-position: right ;
+            background-position: right;
             transform: scale(1.2);
         }
     }
@@ -55,16 +50,16 @@
         line-height: 34px;
         color: #000;
 
-        &::after {
-            content: "";
-            background-color: $tuliptree;
-            height: 1px;
-            width: 68px;
-            position: relative;
-            top: 15px;
-            display: block;
-
-        }
+        // &::after {
+        //     content: "";
+        //     background-color: $tuliptree;
+        //     height: 1px;
+        //     width: 68px;
+        //     position: relative;
+        //     top: 15px;
+        //     display: block;
+        // }
+        @include strip;
     }
 
     &__list {
