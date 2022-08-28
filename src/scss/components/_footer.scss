@@ -1,3 +1,38 @@
 .footer {
     background-color: $codgray;
 }
+
+.footer-items {
+
+
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 4fr));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    &:not(:last-child) {
+        padding-top: 102px;
+    }
+    &:last-child{
+        padding-top: 35px;
+    }
+}
+
+.footer-item {
+    &__title {
+        color: #fff;
+        font: $middle-book-high;
+        text-transform: uppercase;
+    }
+
+    &__li {
+        font: $small-book-premiddle;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 0.8);
+        padding-top: 20px;
+
+        a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
