@@ -13,7 +13,8 @@
     &:not(:last-child) {
         padding-top: 102px;
     }
-    &:last-child{
+
+    &:last-child {
         padding-top: 35px;
     }
 }
@@ -25,14 +26,105 @@
         text-transform: uppercase;
     }
 
+
     &__li {
         font: $small-book-premiddle;
         line-height: 27px;
         color: rgba(255, 255, 255, 0.8);
         padding-top: 20px;
 
+
         a {
             color: rgba(255, 255, 255, 0.8);
         }
+    }
+
+    .call {
+        position: relative;
+
+        &::before {
+            content: "";
+            background: url('../img/sprite.svg#call');
+            background-repeat: no-repeat;
+            width: 43px;
+            height: 18px;
+            position: absolute;
+            left: -38px;
+            bottom: 7px;
+        }
+    }
+
+    .time {
+        position: relative;
+
+        &::before {
+            content: "";
+            background: url('../img/sprite.svg#time');
+            background-repeat: no-repeat;
+            width: 43px;
+            height: 18px;
+            position: absolute;
+            left: -38px;
+            bottom: 7px;
+        }
+    }
+
+    .location {
+        position: relative;
+
+        &::before {
+            content: "";
+            background: url('../img/sprite.svg#location-white');
+            background-repeat: no-repeat;
+            width: 43px;
+            height: 18px;
+            position: absolute;
+            left: -38px;
+            bottom: 7px;
+        }
+    }
+
+    .mail {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url('../img/sprite.svg#mail');
+            background-repeat: no-repeat;
+            width: 28px;
+            height: 13px;
+            position: absolute;
+            left: -28px;
+            bottom: 7px;
+        }
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.8);
+        font: $small-book-premiddle;
+
+        a {
+            color: $tuliptree;
+        }
+    }
+
+    &__icons {
+        display: inline-flex;
+        margin-top: 37px;
+
+        li {
+            &:not(:last-child) {
+                padding-right: 21px;
+            }
+        }
+
+        img {
+            width: 43px;
+            height: 43px;
+        }
+    }
+
+    .footer-list {
+        margin-left: 26px;
     }
 }
