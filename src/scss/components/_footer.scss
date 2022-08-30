@@ -124,7 +124,44 @@
         }
     }
 
-    .footer-list {
+    .footer-list-contact {
         margin-left: 26px;
+    }
+
+    .input-email {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 3px;
+        border: 1px solid #FFF;
+        color: rgba(255, 255, 255, 0.52);
+        font: $small-book-premiddle;
+        text-transform: lowercase;
+        // padding: 15px 0;
+        padding: 15px 132px 15px 20px;
+    }
+
+    .btn-footer {
+        background-color: $tuliptree;
+        width: 50px;
+        height: 66px;
+        position: relative;
+        bottom: 62px;
+        left: 83%;
+        cursor: pointer;
+        z-index: 999;
+
+
+        &::before {
+            content: "";
+            background: url('../img/sprite.svg#arrow-white') no-repeat;
+            position: relative;
+            left: 4px;
+            display: block;
+            transform: rotate(270deg);
+            width: 20px;
+            height: 16px;
+            margin: 0 auto;
+        }
+
+
     }
 }
