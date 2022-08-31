@@ -1,10 +1,11 @@
+@import "../mixins";
+
+
 .footer {
     background-color: $codgray;
 }
 
 .footer-items {
-
-
     padding-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25%, 4fr));
@@ -135,20 +136,35 @@
         color: rgba(255, 255, 255, 0.52);
         font: $small-book-premiddle;
         text-transform: lowercase;
-        // padding: 15px 0;
         padding: 15px 132px 15px 20px;
+        // transition: .5s ease-in;
+        outline: 0;
+        transition: .3s ease-out;
+
+        &:focus {
+            border: 1px solid $tuliptree  !important;
+        }
+
+        &:active {
+            border: 1px solid $tuliptree  !important;
+        }
     }
 
     .btn-footer {
         background-color: $tuliptree;
         width: 50px;
         height: 66px;
+        // position: absolute;
+        // bottom: 17px;
         position: relative;
-        bottom: 62px;
+        bottom: 63px;
         left: 83%;
         cursor: pointer;
         z-index: 999;
-
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: .5s ease-in;
 
         &::before {
             content: "";
@@ -162,6 +178,31 @@
             margin: 0 auto;
         }
 
-
+        &:hover {
+            border: 1px solid $tuliptree;
+            background-color: $codgray;
+        }
     }
+
+    &__form {
+        position: relative;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.8);
+        font: $small-book-premiddle;
+        cursor: pointer;
+    }
+
+    &__custom-checkbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include custom-checkbox;
+    }
+
+    &__checkbox {
+        // @include custom-checkbox;
+    }
+
 }

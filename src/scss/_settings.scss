@@ -1,4 +1,6 @@
 @import "./vars";
+@import "./mixins";
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -121,4 +123,29 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.custom-checkbox {
+    // @include custom-checkbox;
+
+    // &__content {
+    //     font: var(--middle-book);
+    //     color: var(--color-main);
+    //     padding-left: 35px;
+
+    //     &::before {
+    //         top: -3px;
+    //         border-color: var(--color-cameo);
+    //         border-radius: 4px;
+    //         width: 24px;
+    //         height: 24px;
+    //     }
+
+    //     &::after {
+    //         background-image: url("../img/check.svg");
+    //         width: 24px;
+    //         height: 24px;
+    //         background-size: 15px 12px;
+    //     }
+    // }
 }
