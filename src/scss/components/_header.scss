@@ -1,4 +1,9 @@
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
     &__first-line {
         padding: 25px 0;
         background-color: $codgray;
@@ -122,6 +127,7 @@
     &__name-location {
         font: $middle-book;
         color: #000;
+        transition: .3s ease-in;
 
         img {
             width: 100%;
@@ -134,6 +140,10 @@
         }
 
         &:focus {
+            color: $tuliptree;
+        }
+
+        &:hover {
             color: $tuliptree;
         }
     }

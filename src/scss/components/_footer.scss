@@ -195,14 +195,90 @@
     }
 
     &__custom-checkbox {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        @include custom-checkbox;
+        bottom: 45px;
+        position: relative;
     }
 
-    &__checkbox {
-        // @include custom-checkbox;
+}
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+
+    &+label {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        color: rgba(255, 255, 255, 0.8);
+        font: $small-book-premiddle;
+        cursor: pointer;
     }
 
+    &+label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 20px;
+        height: 20px;
+        background: white;
+    }
+
+    &:hover+label:before {
+        background: $tuliptree;
+    }
+
+    // Box focus
+    &:focus+label:before {
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+
+    // Box checked
+    &:checked+label:before {
+        background: $tuliptree;
+    }
+
+    // Disabled state label.
+    &:disabled+label {
+        color: #b8b8b8;
+        cursor: auto;
+    }
+
+    // Disabled box.
+    &:disabled+label:before {
+        box-shadow: none;
+        background: #ddd;
+    }
+
+    &:checked+label:after {
+        content: '';
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        background: #fff;
+        width: 3px;
+        height: 4px;
+        box-shadow:
+            2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+        transform: rotate(45deg);
+    }
+}
+
+.author-code {
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.author-code span {
+    color: $tuliptree;
+}
+
+.author-code a {
+    color: #fff;
 }

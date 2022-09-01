@@ -11,8 +11,11 @@
     }
 
     &__link {
-        // font: $small-book;
         font-family: $font-family;
         color: #fff;
+        transition: .3s ease-in;
+        &:hover {
+            color: $tuliptree;
+        }
     }
 }
