@@ -1,8 +1,10 @@
 .header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 9999;
+    transition: top 0.1s ease;
+    z-index: 999;
 
     &__first-line {
         padding: 25px 0;
@@ -34,18 +36,33 @@
 
     .icon-person {
 
-        margin-right: 15px;
+        background: url(../img/sprite.svg#person) no-repeat;
+        background-repeat: no-repeat;
+        position: relative;
+        display: block;
+        width: 74px;
+        height: 27px;
+        transition: .3s ease-in;
+        // img {
+        //     width: 21px;
+        //     height: 27px;
+        //     object-fit: cover;
+        // }
 
-        img {
-            width: 21px;
-            height: 27px;
-            object-fit: cover;
+        &:hover {
+            background-image: url('../img/sprite.svg#person-hover');
+
         }
     }
 
     &__profile-name {
         flex-basis: 47%;
         color: #fff;
+        transition: .3s ease-in;
+
+        &:hover {
+            color: $tuliptree;
+        }
     }
 
     &__second-line {
@@ -200,9 +217,14 @@
         background-repeat: no-repeat;
         width: 28px;
         height: 26px;
-        // display: block;
         margin-right: 30px;
+        transition: .3s ease-in;
 
+        &:hover {
+            background-image: url('../img/favorites-hover.svg');
+            position: relative;
+            display: block;
+        }
     }
 
     &__cart-link {
@@ -317,12 +339,6 @@
 }
 
 .select-header {
-
-
-
-
-    &__header {}
-
     &__main {
         background-color: #000;
         display: flex;
@@ -438,4 +454,16 @@
 .select-header__visible .select-header__main {
     opacity: 1;
     visibility: visible;
+}
+
+
+
+
+.sticky {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease, height 0.3s;
+    height: 106px;
 }

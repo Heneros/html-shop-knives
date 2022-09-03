@@ -1,9 +1,7 @@
 /////menu
 let intervalId;
-
 document.querySelectorAll('.js-select').forEach(e => {
     e.addEventListener('click', e => {
-        // alert(123);
         const menu = e.currentTarget.dataset.path;
 
         document.querySelectorAll('.select-header__main').forEach(e => {
@@ -32,8 +30,17 @@ document.querySelectorAll('.js-select').forEach(e => {
                     document.querySelector(`[data-target=${menu}]`).classList.remove('open');
                 }
             }
-
-            
         })
     })
 });
+
+// console.log(window.scrollY);
+window.addEventListener('scroll', function () {
+    // header.classList.toggle("sticky", window.scrollY > 32);
+    var header = document.querySelector('.header');
+    if (window.scrollY > 35) {
+        header.classList.add("sticky");
+    } else if (window.scrollY < 50) {
+        header.classList.remove("sticky");
+    }
+})

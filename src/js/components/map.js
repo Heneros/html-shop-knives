@@ -18,7 +18,7 @@ const findMyState = () => {
     }
 
     const error = () => {
-        status.textContent = "Kyiv";
+        status.textContent = "Odessa";
     }
 
     navigator.geolocation.getCurrentPosition(success, error);
