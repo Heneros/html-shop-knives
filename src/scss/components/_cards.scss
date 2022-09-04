@@ -13,13 +13,17 @@
 }
 
 .cards-item {
+
     color: #141414;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     display: flex;
-    // flex-direction: row-reverse;
     position: relative;
     overflow: hidden;
     transition: all .3s;
+
+    &:hover {
+        box-shadow: 0 0 12px $tuliptree;
+    }
 
     &__text {
         padding: 30px 30px;
@@ -32,11 +36,9 @@
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
-        // background-position: center;
         background-position: right center;
         padding-top: 50px;
         transition: all .3s;
-        // z-index: 9;
 
         &:hover {
             background-position: right;
@@ -49,16 +51,6 @@
         font-size: 24px;
         line-height: 34px;
         color: #000;
-
-        // &::after {
-        //     content: "";
-        //     background-color: $tuliptree;
-        //     height: 1px;
-        //     width: 68px;
-        //     position: relative;
-        //     top: 15px;
-        //     display: block;
-        // }
         @include strip;
     }
 
@@ -71,11 +63,25 @@
         font-size: 18px;
         line-height: 34px;
         color: #000;
+        transition: all .5s ease;
+        cursor: pointer;
+        text-transform: capitalize;
 
         &:before {
             content: "\2022";
             font-weight: bold;
             color: $tuliptree;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            position: relative;
+            right: 14px;
+        }
+
+        &:hover::before {
+            content: "\2022";
+            font-weight: bold;
+            color: red;
             display: inline-block;
             width: 6px;
             height: 6px;
