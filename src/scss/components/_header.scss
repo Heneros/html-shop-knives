@@ -509,20 +509,35 @@
 }
 
 @media(min-width: 991px) {
-    .header__mobile-icons {
+    .header-mobile {
         display: none;
     }
 }
 
 @media(max-width: 991px) {
-    .header__mobile-icons {
-        .header__cart-svg img {
-            width: unset;
-            height: unset;
+    .header-mobile {
+        &__cart {
+            img {
+                width: unset;
+                height: unset;
+            }
         }
 
-        &__cart-svg {
-            img {}
+        .cart__num {
+            right: 10px;
+            top: -5px;
         }
+    }
+
+    .header__left {
+        display: none;
+    }
+
+    .header__right {
+        display: none;
+    }
+
+    .header__third-line {
+        display: none;
     }
 }
