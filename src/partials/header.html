@@ -1,6 +1,6 @@
 <header class="header " id="myHeader">
     <div class="header__first-line">
-        <div class="header__container grid container">
+        <div class="header__container grid container grid-mobile">
             <div class="header__left">
                 <nav class="nav header__nav">
                     <ul class="nav__list list-reset">
@@ -27,21 +27,46 @@
                 </div>
             </div>
             <div class=" header-mobile header__mobile-icons">
+
                 <a href="#!" class="header__cart-link">
-                    <div class="header__cart-svg header-mobile__cart">
-                        <img src="img/sprite.svg#cart-black" alt="cart">
+                    <div class="header-mobile__icon header__cart-svg header-mobile__cart">
+                        <img src="img/sprite.svg#cart-black" alt="cart icon">
                         <div class="cart__num">
                             0
                         </div>
                     </div>
                 </a>
 
+                <a href="#!" class="header-mobile__favorites">
+                    <div class="header-mobile__icon mobile-favorites">
+                        <img src="img/sprite.svg#favorites-white" alt="favorites icon">
+                    </div>
+                </a>
+
+                <a href="#!" class="header-mobile__account">
+                    <div class="header-mobile__icon mobile-account">
+                        <img src="img/sprite.svg#person" alt="account icon">
+                    </div>
+                </a>
+
+                <a href="#!" class="header-mobile__call">
+                    <div class="header-mobile__icon mobile-call">
+                        <img src="img/sprite.svg#call" alt="call icon">
+                    </div>
+                </a>
+                
+                <div class="header-mobile__burger js-burger-mobile">
+                    <button type="button" class="burger__head js-burger">
+
+                    </button>
+                </div>
+
             </div>
         </div>
     </div><!-- First Line -->
     <!-- Second Line -->
     <div class="header__second-line">
-        <div class="header__container container grid">
+        <div class="header__container container grid grid-mobile">
             <div class="header__left-second">
                 <a href="#!" class="logo header__logo">
                     <img src="img/sprite.svg#logo" alt="logo">
