@@ -44,3 +44,20 @@ window.addEventListener('scroll', function () {
         header.classList.remove("sticky");
     }
 })
+
+
+
+///mobile burger menu
+
+
+
+// document.querySelector(".js-burger").addEventListener('click', (e) => {
+//     if (this.closest('.js-burger-block').classList.contains("open")) {
+//         this.closest('.js-burger-block').classList.remove("open");
+//         this.closest('.js-burger-block').find('.burger__body').slideUp()
+
+//     } else {
+//         this.closest('.js-burger-block').classList.add("open");
+//         this.closest('.js-burger-block').find('.burger__body').slideDown()
+//     }
+// });
