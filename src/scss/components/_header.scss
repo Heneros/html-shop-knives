@@ -643,8 +643,6 @@
 
 
     .burger-icon {
-        width: 15px;
-        height: 12px;
         position: relative;
         display: block;
 
@@ -701,4 +699,50 @@
         display: none;
         background: #fff;
     }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-10px, 7px);
+        height: 3px;
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(48deg) translate(-6px, -3px);
+        height: 3px;
+    }
+
+
+    .mobile-nav {
+        position: fixed;
+        top: 65px;
+        right: 100%;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        z-index: 98;
+        background-color: $codgray;
+        padding-top: 120px;
+        transition: 0.4s;
+        color: #fff;
+    }
+
+    .mobile-nav.is-active {
+        right: 0;
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
 }
