@@ -615,6 +615,33 @@
         display: none;
     }
 
+    .mobile-favorites {
+        position: relative;
+
+
+
+        background: url('../img/sprite.svg#favorites-white') no-repeat center center;
+        ;
+        position: relative;
+        display: block;
+        width: 61px;
+        height: 26px;
+
+
+        &:hover::after {
+            content: "";
+            position: absolute;
+            top: -1px;
+            right: 16px;
+            display: block;
+            width: 28px;
+            height: 27px;
+            background: url('../img/favorites-hover.svg') no-repeat center center;
+            ;
+        }
+    }
+
+
     .burger-icon {
         width: 15px;
         height: 12px;
