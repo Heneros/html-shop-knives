@@ -56,6 +56,9 @@ const mobile_menu = document.querySelector('.mobile-nav');
 
 const header__logo = document.querySelector('.header__logo');
 const header__search = document.querySelector('.header__search-field');
+const header__cart = document.querySelector('.header__cart-link');
+
+
 
 
 menu_btn.addEventListener('click', function () {
