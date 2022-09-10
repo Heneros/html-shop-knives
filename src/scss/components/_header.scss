@@ -684,6 +684,24 @@
         height: 3px;
     }
 
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .hamburger.is-active {
+        // background-color: $tuliptree;
+        // height: 100%;
+    }
+
+    .hamburger.is-active:before {
+        background-color: #fff;
+    }
+
+    .hamburger.is-active:after {
+        background-color: #fff;
+    }
+
+
     .mobile-nav {
         position: fixed;
         // top: 65px;
@@ -704,9 +722,6 @@
         left: 0;
     }
 
-    .hamburger.is-active .bar {
-        opacity: 0;
-    }
 
 
     .hamburger .bar,
@@ -735,24 +750,65 @@
     .header__logo.hidden {
         display: none;
     }
-    .header__cart-link.hidden {
-        display: none;
-    }
+
     .header__cart-link.hidden {
         display: none;
     }
 
+    .header-mobile__favorites.hidden {
+        display: none;
+    }
+
+    .header-mobile__call.hidden {
+        display: none;
+    }
+
+    .header-mobile__account.hidden {
+        display: none;
+    }
+
+
     .header__search-field.visible {
-        margin-top: 17px;
+        // margin-top: 17px;
+        margin-top: 9px;
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
         height: 100%;
     }
-
-    .header__second-line {
-        height: 87px;
+    .header__second-line{
+        height: 90px;
     }
+
+    // .header__second-line {
+    //     height: 87px;
+    // }
+
+    .header__logo-white {
+        display: none;
+        margin: 0 auto;
+
+        img {
+            width: 50%;
+        }
+
+    }
+
+    .header__logo-white.visible {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-mobile__burger {
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__first-line.visible{
+    //     height: 70px;
+    //     padding: unset;
+
+    // }
 
 }

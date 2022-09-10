@@ -57,6 +57,12 @@ const mobile_menu = document.querySelector('.mobile-nav');
 const header__logo = document.querySelector('.header__logo');
 const header__search = document.querySelector('.header__search-field');
 const header__cart = document.querySelector('.header__cart-link');
+const header__favorites = document.querySelector('.header-mobile__favorites');
+const header__mobileCall = document.querySelector('.header-mobile__call');
+const header__mobileAccount = document.querySelector('.header-mobile__account');
+// const heade__FirstLine = document.querySelector('.header__first-line');
+
+const header__logoWhite = document.querySelector('.header__logo-white');
 
 
 
@@ -66,4 +72,10 @@ menu_btn.addEventListener('click', function () {
     mobile_menu.classList.toggle('is-active');
     header__logo.classList.toggle('hidden');
     header__search.classList.toggle('visible');
+    header__cart.classList.toggle('hidden');
+    header__favorites.classList.toggle('hidden');
+    header__mobileCall.classList.toggle('hidden');
+    header__mobileAccount.classList.toggle('hidden');
+    header__logoWhite.classList.toggle('visible');
+    // heade__FirstLine.classList.toggle('visible');
 });
