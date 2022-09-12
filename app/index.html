@@ -14,7 +14,7 @@
 
 <body>
     <div class="site-container">
-        <header class="header " id="myHeader">
+        <header class="header page-header" id="myHeader">
     <div class="header__first-line">
         <div class="header__container grid container grid-mobile">
             <div class="header__left">
@@ -72,7 +72,135 @@
                     <a href="#!" class="header__logo-white">
                         <img src="img/sprite.svg#logo-white" alt="cart icon">
                     </a>
-                    <button type="button" class="burger__head js-burger hamburger burger-icon">
+                    <!-- <button class="toggle-menu" type="button">
+                        MENU
+                    </button> -->
+                    <button type="button" class="burger__head hamburger burger-icon">
+                        <div class="bar"></div>
+                    </button>
+
+                    <div class="menu-wrapper">
+                        <div class="list-wrapper">
+                            <ul class="menu level-1">
+                                <li>
+                                    <a href="" class="nested">Personal Cabinet </a>
+                                    <ul class="sub-menu level-2">
+                                        <li>
+                                            <a href="" class="nested">Living Room </a>
+                                            <ul class="sub-menu level-3">
+                                                <li>
+                                                    <a href="">Oracle 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Host 00</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Tiny 12</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Bright 39</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Exclusion 229</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Dining Room</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bedroom</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Lighting</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Outdoor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Office</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="nested">Featured Products</a>
+                                    <ul class="sub-menu level-2">
+                                        <li>
+                                            <a href="">Sofa 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Chair 11</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Train 21</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Clumb 52</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Geo 29</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Star</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="nested">Company</a>
+                                    <ul class="sub-menu level-2">
+                                        <li>
+                                            <a href="">History</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="nested">Careers</a>
+                                            <ul class="sub-menu level-3">
+                                                <li>
+                                                    <a href="">Sales Assistant</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Graphic Designer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Marketing Specialist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Storekeeper</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Clients</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-wrapper">
+                            <button type="button" class="back-one-level">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+                                </svg>
+                                <span>Back</span>
+                            </button>
+                            <div class="sub-menu-wrapper"></div>
+                        </div>
+                        <div class="list-wrapper">
+                            <button type="button" class="back-one-level">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+                                </svg>
+                                <span>Back</span>
+                            </button>
+                            <div class="sub-menu-wrapper"></div>
+                        </div>
+                    </div>
+                    <!-- <button type="button" class="burger__head js-burger hamburger burger-icon">
                         <div class="bar"></div>
                     </button>
                     <div id="menu" class="mobile-nav">
@@ -83,16 +211,8 @@
                             <div class="dropdown">
                                 <li class="header-mobile-list__item">
                                     <button class="header-mobile-list__link">Catalog of products</button>
-                                    <!-- <div class="dropdown-content">
-                                        <li>Test</li>
-                                        <li>Test2</li>
-                                        <li>Test3</li>
-                                    </div> -->
                                 </li>
-                                
                             </div>
-                         
-
                             <li class="header-mobile-list__item">
                                 <a class="header-mobile-list__link" href="#!">Contacts</a>
                             </li>
@@ -106,7 +226,7 @@
                                 <a class="header-mobile-list__link" href="#!">About Us</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!---Burger Mobile -->
@@ -127,9 +247,6 @@
             <div class="header__right-second">
                 <div class="header__location">
                     <span class="icon icon-location">
-                        <!-- <svg>
-                            <use xlink:href="img/sprite.svg#location"></use>
-                        </svg> -->
                         <img src="img/sprite.svg#location" alt="">
                     </span>
                     <a href="#!" class="header__name-location location">
