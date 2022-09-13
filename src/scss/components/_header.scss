@@ -653,23 +653,6 @@
         }
     }
 
-    .burger__head {
-        background-color: transparent;
-        padding: unset;
-        position: relative;
-        cursor: pointer;
-
-        .burger-icon__line {
-            display: block;
-            background: #fff;
-            width: 28px;
-            height: 3px;
-            position: absolute;
-            left: 0;
-            border-radius: 1px;
-            transition: all 0.4s ease-in;
-        }
-    }
 
 
 
@@ -684,15 +667,8 @@
         height: 3px;
     }
 
-    .hamburger.is-active .bar {
+    .hamburger.is-active .hamburger-bar {
         opacity: 0;
-    }
-
-    .toggle-menu {}
-
-    .hamburger.is-active {
-        // background-color: $tuliptree;
-        // height: 100%;
     }
 
     .hamburger.is-active:before {
@@ -725,7 +701,7 @@
 
 
 
-    .hamburger .bar,
+    .hamburger .hamburger-bar,
     .hamburger:after,
     .hamburger:before {
         content: '';
@@ -841,37 +817,18 @@
 
     }
 
-    // .page-header {
-    //     position: fixed;
-    //     top: 0;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     width: 100%;
-    //     max-width: 600px;
-    //     margin: 0 auto;
-    //     color: var(--white);
-    // }
 
-    .page-header .header-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-        padding: 0 20px;
-        background: var(--header-bar-bg);
-    }
 
-    .page-header .header-bar .brand {
-        font-weight: bold;
-    }
 
-    .page-header .header-bar .social {
-        display: flex;
-    }
 
-    .page-header .header-bar svg {
-        fill: var(--white);
-    }
+
+
+
+
+
+
+
+
 
     .page-header .menu-wrapper {
         // display: none;
@@ -894,7 +851,6 @@
     }
 
     .page-header .menu-wrapper.is-visible {
-        // display: block;
         left: 0;
     }
 
@@ -902,7 +858,7 @@
         height: 100%;
         padding: 30px 20px;
         overflow-y: auto;
-        background: var(--menu-bg);
+        background-color: $codgray;
     }
 
     .page-header .list-wrapper:nth-child(2),
@@ -986,40 +942,39 @@
         --white: #fff;
         --yellow: #fffbbc;
         --orange: #d1b39f;
-        --header-bar-bg: #333;
         --menu-bg: #292929;
-      }
-      
-      * {
+    }
+
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-      }
-      
-      ul {
+    }
+
+    ul {
         list-style: none;
-      }
-      
-      button {
+    }
+
+    button {
         background: none;
         border: none;
         cursor: pointer;
         font-family: inherit;
         font-size: 100%;
-      }
-      
-      a {
+    }
+
+    a {
         text-decoration: none;
-      }
-      
-      button,
-      a {
+    }
+
+    button,
+    a {
         color: inherit;
-      }
-      
- 
-      
-      .notification {
+    }
+
+
+
+    .notification {
         position: fixed;
         left: 0;
         right: 0;
@@ -1028,63 +983,20 @@
         text-align: center;
         z-index: 1;
         background: var(--yellow);
-      }
-      
-      @media (max-width: 700px) {
+    }
+
+    @media (max-width: 700px) {
         .notification {
-          display: none;
+            display: none;
         }
-      }
-      
-      
-      /* HEADER STYLES
-      –––––––––––––––––––––––––––––––––––––––––––––––––– */
-      .page-header {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        color: var(--white);
-      }
-      
-      .page-header .header-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-        padding: 0 20px;
-        background: var(--header-bar-bg);
-      }
-      
-      .page-header .header-bar .brand {
-        font-weight: bold;
-      }
-      
-      .page-header .header-bar .social {
-        display: flex;
-      }
-      
-  
-      
-      .page-header .menu-wrapper {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        height: calc(100vh - 60px);
-        overflow: hidden;
-      }
-      
-      .page-header .menu-wrapper.is-visible {
-        display: block;
-      }
-      
- 
-   
-      
+    }
+
+
+
+
+
+
+
+
 
 }
