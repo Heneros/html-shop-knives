@@ -2,9 +2,7 @@
     background-image: url('../img/homepage-bg-img.png');
     background-repeat: no-repeat;
     background-size: cover;
-    // margin-top: -4px;
-    // margin-top: 430px;
-    margin-top: 227px;
+    // margin-top: 227px;
 
     &__block {
         display: flex;
@@ -237,4 +235,31 @@
         }
     }
 
+}
+
+@media(max-width: 1775px) {
+    .slider-homepage {
+        &__product-image {
+            &::before {
+                width: auto;
+                height: unset;
+            }
+        }
+
+    }
+}
+
+@media(max-width: 1225px) {
+    .slider-homepage {
+        // &__pagination {
+        //     top: 15px;
+        // }
+
+        // &__scrollbar {
+        //     top: 15px;
+        // }
+    }
+    .slider-homepage__btn{
+        margin-top: 35px;
+    }
 }

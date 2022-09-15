@@ -35,15 +35,14 @@ document.querySelectorAll('.js-select').forEach(e => {
 });
 
 // console.log(window.scrollY);
-window.addEventListener('scroll', function () {
-    // header.classList.toggle("sticky", window.scrollY > 32);
-    var header = document.querySelector('.header');
-    if (window.scrollY > 35) {
-        header.classList.add("sticky");
-    } else if (window.scrollY < 50) {
-        header.classList.remove("sticky");
-    }
-})
+// window.addEventListener('scroll', function () {
+//     var header = document.querySelector('.header');
+//     if (window.scrollY > 35) {
+//         header.classList.add("sticky");
+//     } else if (window.scrollY < 50) {
+//         header.classList.remove("sticky");
+//     }
+// })
 
 
 
