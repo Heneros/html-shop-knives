@@ -640,8 +640,6 @@
             ;
         }
     }
-
-
     .burger-icon {
         position: relative;
         display: block;
@@ -652,12 +650,10 @@
             }
         }
     }
-
-
-
     .hamburger {
         background-color: $codgray;
         border: none;
+        cursor: pointer;
     }
 
     .hamburger.is-active:before {
@@ -810,9 +806,8 @@
         }
     }
 
-    .page-header .list-wrapper{
+    .page-header .list-wrapper {}
 
-    }
     .list-wrapper {
         width: 100%;
     }
@@ -823,11 +818,26 @@
     }
 
     .menu-wrapper li {
-        width: 100%;
-        border-top: 1px solid red;
-        border-bottom: 1px solid red;
+        // width: 100%;
+
         margin-left: -35px;
+
+        &::after {
+            content: "";
+            display: block;
+            position: relative;
+            border-top: 1px solid #3D3D3D;
+            border-bottom: 1px solid #3D3D3D;
+        }
     }
+
+
+    .page-header .menu-wrapper a {
+        display: inline-block;
+        position: relative;
+        padding: 20px 0px 20px 15px;
+    }
+
 
     .page-header .menu-wrapper {
         position: fixed;
@@ -875,18 +885,6 @@
         display: none;
     }
 
-    .page-header .menu-wrapper li+li {
-        margin-top: 24px;
-    }
-
-    .page-header .menu-wrapper a {
-        display: inline-block;
-        position: relative;
-        padding: 5px 0;
-    }
-
-
-
     .menu-wrapper .nested::before,
     .menu-wrapper .nested.is-active::before {
         content: "";
@@ -912,6 +910,7 @@
         color: #fff;
         font: $small-book;
         cursor: pointer;
+        transition: ease-in .3s;
 
         &::before {
             content: "";
@@ -921,6 +920,10 @@
             width: 71px;
             height: 16px;
             left: -28px;
+        }
+
+        &:hover {
+            color: $tuliptree;
         }
     }
 
