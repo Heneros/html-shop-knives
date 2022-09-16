@@ -13,6 +13,9 @@ const swiper = new Swiper('.slider-homepage__swiper', {
     },
     scrollbar:{
         el: '.slider-homepage__scrollbar'
+    },
+    breakpoints:{
+        
     }
 
 });

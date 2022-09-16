@@ -249,17 +249,116 @@
     }
 }
 
-@media(max-width: 1225px) {
+@media(max-width: 1300px) {
     .slider-homepage {
-        // &__pagination {
-        //     top: 15px;
-        // }
+        &__icon {
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
 
-        // &__scrollbar {
-        //     top: 15px;
-        // }
     }
-    .slider-homepage__btn{
-        margin-top: 35px;
+
+}
+
+@media(max-width: 1225px) {
+    .slider-homepage__btn {
+        margin-top: 0;
     }
+
+}
+
+@media(max-width: 1200px) {
+    .slider-homepage__scrollbar {
+        bottom: 6px !important;
+    }
+
+    .slider-homepage__pagination {
+        bottom: -12px;
+    }
+
+    .slider-homepage__text-content {
+        padding-right: 86px;
+    }
+}
+
+
+@media(max-width: 991px) {
+    .slider-homepage {
+        &__text-content {
+            padding-right: 0px;
+        }
+
+        &__block {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .swiper-wrapper {
+            max-width: 647px;
+        }
+
+        &__product-block {
+            img {
+                display: flex;
+                margin: 0 auto;
+                width: 50%;
+            }
+        }
+
+        &__icons {
+            flex-direction: column;
+        }
+
+        &__scrollbar {
+            left: 42% !important;
+        }
+
+        &__pagination {
+            left: 374px;
+        }
+    }
+}
+
+@media(max-width: 765px) {
+    .slider-homepage__swiper {
+        max-width: 100%;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .slider-homepage {
+        &__btn {
+            display: none;
+        }
+
+        &__scrollbar {
+            display: none;
+        }
+
+        &__pagination {
+            display: none;
+        }
+
+        &__plus-one {
+            display: none;
+        }
+
+        &__plus-two {
+            display: none;
+        }
+
+        &__plus-three {
+            display: none;
+        }
+
+        &__product-block {
+            img {
+                width: 75%;
+            }
+        }
+    }
+
+
 }

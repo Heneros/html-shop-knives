@@ -548,6 +548,13 @@
 
 }
 
+@media(max-width: 790px){
+    .header__order-call{
+        left: 18px;
+
+    }
+}
+
 @media(max-width: 768px) {
     .grid-mobile {
         grid-template-columns: repeat(1, 1fr);
