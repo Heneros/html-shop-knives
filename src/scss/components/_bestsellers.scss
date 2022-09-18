@@ -8,7 +8,6 @@
     padding-bottom: 60px;
 
     &__pagination {
-        // margin-top: 60px;
         margin-top: 160px;
     }
 
@@ -128,3 +127,43 @@
     }
 
 }
+
+@media(max-width: 650px) {
+    .bestsellers-products-item {
+        &__price {
+            flex-basis: 50%;
+        }
+
+        &__icons {
+            flex-basis: 50%;
+            justify-content: right;
+
+        }
+    }
+
+    .bestsellers {
+        .swiper-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .swiper-slide {
+                width: 100% !important;
+            }
+        }
+        .bestsellers-products__pagination{
+            display: none;
+        }
+    }
+}
+
+
+
+
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// flex-wrap: wrap;
