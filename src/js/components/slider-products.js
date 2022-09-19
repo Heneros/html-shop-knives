@@ -1,8 +1,8 @@
 const ProductsSlider = new Swiper('.bestsellers-products__swiper', {
     speed: 800,
-    spaceBetween: 20,
-    slidesPerView: 4,
-    slidesPerView: 4,
+    // spaceBetween: 20,
+    // slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
         el: '.bestsellers-products__pagination'
@@ -24,78 +24,78 @@ const ProductsSlider = new Swiper('.bestsellers-products__swiper', {
 
 
 
-(function () {
+// (function () {
 
-    'use strict';
+//     'use strict';
 
-    // breakpoint where swiper will be destroyed
-    // and switches to a dual-column layout
-    const breakpoint = window.matchMedia('(min-width:650px)');
+//     // breakpoint where swiper will be destroyed
+//     // and switches to a dual-column layout
+//     const breakpoint = window.matchMedia('(min-width:650px)');
 
-    // keep track of swiper instances to destroy later
-    let mySwiper;
+//     // keep track of swiper instances to destroy later
+//     let mySwiper;
 
-    //////////////////////////////////////////////////////////////////
-    //////////////////////////////////////////////////////////////////
-    //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
 
-    const breakpointChecker = function () {
+//     const breakpointChecker = function () {
 
-        // if larger viewport and multi-row layout needed
-        if (breakpoint.matches === true) {
+//         // if larger viewport and multi-row layout needed
+//         if (breakpoint.matches === true) {
 
-            // clean up old instances and inline styles when available
-            if (mySwiper !== undefined) mySwiper.destroy(true, true);
+//             // clean up old instances and inline styles when available
+//             if (mySwiper !== undefined) mySwiper.destroy(true, true);
 
-            // or/and do nothing
-            return;
+//             // or/and do nothing
+//             return;
 
-            // else if a small viewport and single column layout needed
-        } else if (breakpoint.matches === false) {
+//             // else if a small viewport and single column layout needed
+//         } else if (breakpoint.matches === false) {
 
-            // fire small viewport version of swiper
-            return enableSwiper();
+//             // fire small viewport version of swiper
+//             return enableSwiper();
 
-        }
+//         }
 
-    };
+//     };
 
-    //////////////////////////////////////////////////////////////////
-    //////////////////////////////////////////////////////////////////
-    //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
 
-    const enableSwiper = function () {
+//     const enableSwiper = function () {
 
-        mySwiper = new Swiper('.bestsellers-products__swiper', {
+//         mySwiper = new Swiper('.bestsellers-products__swiper', {
 
-            loop: true,
+//             loop: true,
 
-            slidesPerView: 'auto',
+//             slidesPerView: 'auto',
 
-            centeredSlides: true,
+//             centeredSlides: true,
 
-            a11y: true,
-            keyboardControl: true,
-            grabCursor: true,
+//             a11y: true,
+//             keyboardControl: true,
+//             grabCursor: true,
 
-            // pagination
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
+//             // pagination
+//             pagination: '.swiper-pagination',
+//             paginationClickable: true,
 
-        });
+//         });
 
-    };
+//     };
 
-    //////////////////////////////////////////////////////////////////
-    //////////////////////////////////////////////////////////////////
-    //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
 
-    // keep an eye on viewport size changes
-    breakpoint.addListener(breakpointChecker);
+//     // keep an eye on viewport size changes
+//     breakpoint.addListener(breakpointChecker);
 
-    // kickstart
-    breakpointChecker();
+//     // kickstart
+//     breakpointChecker();
 
 
 
-})(); /* IIFE end */
+// })(); /* IIFE end */

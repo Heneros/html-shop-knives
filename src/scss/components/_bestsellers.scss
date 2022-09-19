@@ -142,18 +142,18 @@
     }
 
     .bestsellers {
-        .swiper-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+        // .swiper-wrapper {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        //     flex-wrap: wrap;
 
-            .swiper-slide {
-                width: 100% !important;
-            }
-        }
-        .bestsellers-products__pagination{
+        //     .swiper-slide {
+        //         width: 100% !important;
+        //     }
+        // }
+        .bestsellers-products__pagination {
             display: none;
         }
     }
