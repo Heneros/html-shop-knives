@@ -5,10 +5,10 @@ const noveltySlider = new Swiper('.novelty-slider', {
         el: '.novelty__pagination'
     },
     breakpoints: {
-        756: {
+        1160: {
             slidesPerView: 3,
         },
-        650: {
+        756: {
             slidesPerView: 2,
         },
     }

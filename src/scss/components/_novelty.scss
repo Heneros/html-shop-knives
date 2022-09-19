@@ -2,6 +2,7 @@
     background-image: url('../img/bg-novelty.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
 }
 
@@ -97,13 +98,45 @@
 
 
 @media(max-width: 1160px) {
-    .novelty-blocks {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
+    .novelty {
 
-        .swiper-wrapper {
-            max-width: 760px;
+        .novelty-blocks {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .swiper-wrapper {
+                max-width: 760px;
+            }
+
         }
     }
+
+}
+
+@media(max-width: 800px) {
+    .novelty {
+
+        .novelty-blocks {
+            .swiper-wrapper {
+                max-width: 650px;
+            }
+
+        }
+    }
+
+}
+
+
+@media(max-width: 700px) {
+    .novelty {
+
+        .novelty-blocks {
+            .swiper-wrapper {
+                max-width: 300px;
+            }
+
+        }
+    }
+
 }
