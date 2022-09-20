@@ -58,6 +58,17 @@
     .banner-bg-img {
         display: none;
     }
+
+    .banners-items {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 2fr));
+    }
+
+    .banner-item {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 
 @media(min-width: 820px) {
