@@ -111,6 +111,19 @@ img {
     .text-above {
         margin: 0 25px;
     }
+
+    .promotions {
+        .text-above {
+            margin: 0 35px;
+
+            .catalog {
+                &::after {
+                    content: "";
+                    left: 145px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 650px) {
@@ -123,13 +136,15 @@ img {
             display: none;
         }
     }
+    .promotions .bestsellers-products__pagination {
+        display: none;
+    }
 }
 
 @media(min-width: 650px) {
+
     .text-above-adaptive {
         display: none;
-
-        .catalog {}
     }
 }
 
@@ -137,8 +152,6 @@ img {
     .text-above-adaptive {
         margin: 0 auto;
         text-align: center;
-
-        .catalog {}
     }
 }
 
