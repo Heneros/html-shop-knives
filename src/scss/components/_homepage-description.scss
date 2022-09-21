@@ -1,0 +1,20 @@
+.homepage-description {
+    margin-top: 120px;
+
+    .description {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+
+        h1 {
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            font: $small-book-premiddle;
+            color: #000000;
+
+        }
+    }
+
+}

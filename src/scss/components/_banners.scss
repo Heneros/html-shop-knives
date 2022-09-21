@@ -68,6 +68,40 @@
         flex-direction: column-reverse;
         flex-wrap: wrap;
         align-items: center;
+
+        .banner-text {
+            text-align: center;
+            padding: 30px 0 0 0px;
+        }
+
+        .banner-title::after {
+            display: none;
+        }
+
+        .banner-description {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .read-more {
+            display: none;
+        }
+
+        &__adaptive {
+            margin-top: 16px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .read-more__adaptive {
+            width: 100%;
+            font: $middle-book-high;
+            padding: 17px 0;
+        }
+
     }
 }
 
@@ -75,4 +109,9 @@
     .banner-bg__adaptive {
         display: none;
     }
+
+    .banner-item__adaptive {
+        display: none;
+    }
+
 }
