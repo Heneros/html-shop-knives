@@ -37,7 +37,13 @@
 
         a {
             color: rgba(255, 255, 255, 0.8);
+            transition: eease-in .3s;
+
+            &:hover {
+                color: $tuliptree;
+            }
         }
+
     }
 
     .call {
@@ -154,9 +160,7 @@
         background-color: $tuliptree;
         width: 50px;
         height: 66px;
-        // position: absolute;
-        // bottom: 17px;
-        position: relative;
+        position: absolute;
         bottom: 63px;
         left: 83%;
         cursor: pointer;
@@ -195,7 +199,8 @@
     }
 
     &__custom-checkbox {
-        bottom: 45px;
+        bottom: 0;
+        top: 15px;
         position: relative;
     }
 

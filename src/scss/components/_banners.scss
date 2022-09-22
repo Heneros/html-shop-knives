@@ -66,12 +66,13 @@
     .banner-item {
         display: flex;
         flex-direction: column-reverse;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         align-items: center;
 
         .banner-text {
             text-align: center;
             padding: 30px 0 0 0px;
+            flex-basis: 50%;
         }
 
         .banner-title::after {
@@ -80,6 +81,7 @@
 
         .banner-description {
             width: 100%;
+            margin-top: 25px;
             margin-bottom: 0;
         }
 
@@ -87,13 +89,18 @@
             display: none;
         }
 
-        &__adaptive {
+        .banner-bg__adaptive {
+            flex-basis: 50%;
+        }
+
+        .banner-item__adaptive {
             margin-top: 16px;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+
         }
 
         .read-more__adaptive {

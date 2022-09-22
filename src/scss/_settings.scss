@@ -107,7 +107,7 @@ img {
 }
 
 
-@media(max-width: 1585px) {
+@media(max-width: 1620px) {
     .text-above {
         margin: 0 25px;
     }
@@ -136,7 +136,9 @@ img {
             display: none;
         }
     }
-    .promotions .bestsellers-products__pagination {
+
+    .promotions .bestsellers-products__pagination,
+    .flashlights .bestsellers-products__pagination {
         display: none;
     }
 }
