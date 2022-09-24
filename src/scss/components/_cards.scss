@@ -1,18 +1,14 @@
 .cards {
     margin-top: 100px;
-
-
 }
 
 .cards-items {
     display: grid;
-    // grid-template-columns: 511px 511px 511px;
     grid-template-columns: repeat(auto-fill, minmax(475px, 3fr));
     gap: 30px;
 }
 
 .cards-item {
-
     color: #141414;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -26,7 +22,7 @@
     }
 
     &__text {
-        padding: 30px 30px;
+        padding: 6px 30px;
         flex-basis: 45%;
         z-index: 5;
     }
