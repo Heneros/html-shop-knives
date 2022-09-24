@@ -112,6 +112,18 @@ img {
         margin: 0 25px;
     }
 
+    .flashlights {
+        .text-above {
+            margin: 0 35px;
+            .catalog {
+                &::after {
+                    content: "";
+                    left: 155px;
+                }
+            }
+        }
+    }
+
     .promotions {
         .text-above {
             margin: 0 35px;

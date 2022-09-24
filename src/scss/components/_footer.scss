@@ -152,9 +152,6 @@
         width: 50px;
         height: 59px;
         margin-left: -7px;
-        // position: absolute;
-        // left: 83%;
-        // top: 0;
         cursor: pointer;
         z-index: 999;
         border: none;
@@ -189,6 +186,7 @@
         text-transform: lowercase;
         padding-top: 15px;
         padding-bottom: 15px;
+        padding-left: 15px;
         width: 100%;
         outline: 0;
         transition: .3s ease-out;
@@ -298,4 +296,75 @@
 
 .author-code a {
     color: #fff;
+}
+
+@media(max-width: 1375px) {
+    .footer {
+        &__second--row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50%, 2fr));
+        }
+
+        &__second--row>.footer-item {
+            margin: 30px auto;
+        }
+
+        &__second--row>.footer-item:nth-child(4) {
+            margin: unset;
+        }
+
+        &__second--row>.footer-item:nth-child(3) {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        &__second--row>.footer-item:nth-child(2) {
+            margin: unset;
+        }
+
+        .footer-items:not(:last-child) {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50%, 2fr));
+            text-align: center;
+        }
+
+        .footer-items:not(:last-child)>.footer-item {
+            margin: 30px auto;
+        }
+
+        .footer-item__form {
+            .footer-item__row--email {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 765px) {
+    .footer {
+        &__second--row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        }
+
+        &__second--row>.footer-item:nth-child(4) {
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        &__second--row>.footer-item:nth-child(2) {
+            margin: 30px auto;
+            text-align: center;
+        }
+
+
+        .footer-items:not(:last-child) {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        }
+
+        .footer-items:not(:last-child)>.footer-item {
+            margin: 30px auto;
+        }
+    }
 }
