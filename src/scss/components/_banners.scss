@@ -89,7 +89,7 @@
             display: none;
         }
 
-        .banner-bg__adaptive {
+        .banner-bg-adaptive {
             flex-basis: 50%;
         }
 
@@ -103,7 +103,7 @@
 
         }
 
-        .read-more__adaptive {
+        .adaptive-read-more {
             width: 100%;
             font: $middle-book-high;
             padding: 17px 0;
@@ -113,7 +113,7 @@
 }
 
 @media(min-width: 820px) {
-    .banner-bg__adaptive {
+    .banner-bg-adaptive {
         display: none;
     }
 
