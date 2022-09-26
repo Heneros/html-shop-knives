@@ -1,0 +1,19 @@
+.shop-category {
+    &__title {
+        font-size: 24px;
+    }
+
+    &__second-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .divide{
+        &::after{
+            content: "";
+            background-image: url('../img/sprite.svg');
+        }
+    }
+
+}
