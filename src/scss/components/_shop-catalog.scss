@@ -1,9 +1,22 @@
 .shop-catalog {
     &__left {
         grid-column: 3 span;
+
+        .irs--flat .irs-handle {}
+
+        .irs--flat .irs-line {
+            background-color: $tuliptree;
+        }
+
+        .irs--flat .irs-bar {
+            background-color: #000000;
+        }
     }
 
     &__right {
         grid-column: 9 span;
     }
+
+
+
 }
