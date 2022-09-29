@@ -1,17 +1,56 @@
 .shop-catalog {
     &__left {
         grid-column: 3 span;
-
-        .irs--flat .irs-handle {}
-
-        .irs--flat .irs-line {
-            background-color: $tuliptree;
-        }
-
-        .irs--flat .irs-bar {
-            background-color: #000000;
-        }
     }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    &__input {
+        font: $small-book-premiddle;
+        color: $codgray;
+        background-color: unset;
+        outline: 0;
+        width: 45%;
+        height: 40px;
+        border: 1px solid #CBCBCB;
+        text-align: center;
+    }
+
+    .noUi-connect {
+        background-color: #000000;
+    }
+
+    .noUi-connects {
+        background-color: $tuliptree;
+        height: 2px;
+    }
+
+    .noUi-horizontal .noUi-handle {
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        cursor: grab;
+        background-color: $tuliptree;
+        // position: relative;
+    }
+
+    .noUi-touch-area {
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        background-color: $codgray;
+        position: absolute;
+        top: 3px;
+        left: 4px;
+    }
+
+    // $codgray
+
 
     &__right {
         grid-column: 9 span;
