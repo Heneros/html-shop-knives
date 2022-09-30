@@ -6,6 +6,10 @@ $(function () {
     //     min: 100,
     //     max: 5000,
     // });
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     const rangeSlider = document.getElementById('range-slider');
 
     if (rangeSlider) {
@@ -16,7 +20,10 @@ $(function () {
             range: {
                 'min': [500],
                 'max': [5000]
-            }
+            },
+            handles: 1,
+            prefix: '$',
+
         });
 
         const input0 = document.getElementById('input-0');
@@ -40,4 +47,6 @@ $(function () {
             });
         });
     }
+
+
 });

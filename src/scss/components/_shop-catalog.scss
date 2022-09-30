@@ -19,6 +19,39 @@
         height: 40px;
         border: 1px solid #CBCBCB;
         text-align: center;
+
+        &::before {
+            content: "$";
+            // font-size: 16px;
+            // color: #000000;
+            // display: block;
+ 
+
+        }
+    }
+
+    &__filter-price {
+        font: $middle-book-higher;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: "";
+            background: url('../img/sprite.svg#arrow') no-repeat;
+            height: 10px;
+            width: 16px;
+            position: absolute;
+            top: 6px;
+            right: 21px;
+            transform: rotate(176deg);
+        }
+    }
+
+    &__filter-products {
+        background-color: #000000;
+        padding: 23px 0;
+        padding-left: 30px;
+        color: #fff;
     }
 
     .noUi-connect {
@@ -36,7 +69,6 @@
         height: 18px;
         cursor: grab;
         background-color: $tuliptree;
-        // position: relative;
     }
 
     .noUi-touch-area {
@@ -48,9 +80,6 @@
         top: 3px;
         left: 4px;
     }
-
-    // $codgray
-
 
     &__right {
         grid-column: 9 span;
