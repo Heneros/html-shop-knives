@@ -34,7 +34,19 @@
             position: absolute;
             top: 6px;
             right: 21px;
-            transform: rotate(176deg);
+            transform: rotate(180deg);
+            transition: transform .3s;
+        }
+
+
+
+    }
+
+    .shop-catalog__filter-price.filter__item-drop--active {
+
+        &::after {
+            content: "";
+            transform: rotate(0deg);
         }
     }
 
@@ -46,11 +58,18 @@
             content: "";
             background: url('../img/sprite.svg#arrow') no-repeat;
             height: 10px;
-            // width: 16px;
             width: 25px;
             position: absolute;
             right: 21px;
-            transform: rotate(176deg);
+            transform: rotate(180deg);
+            transition: transform .3s;
+        }
+    }
+
+    .arrow-products.filter__item-drop--active {
+        &::after {
+            content: "";
+            transform: rotate(0deg);
         }
     }
 
@@ -88,6 +107,14 @@
         position: absolute;
         top: 3px;
         left: 4px;
+    }
+
+    .noUi-target {
+        position: relative;
+        background: unset;
+        border-radius: unset;
+        border: unset;
+        box-shadow: unset;
     }
 
     &__filter-box {
@@ -129,6 +156,7 @@
             margin-left: 15px;
             color: $tuliptree;
         }
+
 
     }
 

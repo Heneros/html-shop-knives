@@ -7,7 +7,7 @@ $(function () {
     //     max: 5000,
     // });
 
- 
+
     const rangeSlider = document.getElementById('range-slider');
 
     if (rangeSlider) {
@@ -19,8 +19,8 @@ $(function () {
                 'min': [500],
                 'max': [5000]
             },
-            handles: 1,
-            prefix: '$',
+
+
 
         });
 
@@ -45,6 +45,14 @@ $(function () {
             });
         });
     }
+
+
+
+
+    $(".filter__item-drop").on('click', function () {
+      $(this).toggleClass('filter__item-drop--active');
+      $(this).next().slideToggle(200);
+    })
 
 
 });
