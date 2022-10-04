@@ -8,6 +8,10 @@ $(function () {
     // });
 
 
+
+
+
+
     const rangeSlider = document.getElementById('range-slider');
 
     if (rangeSlider) {
@@ -19,9 +23,6 @@ $(function () {
                 'min': [500],
                 'max': [5000]
             },
-
-
-
         });
 
         const input0 = document.getElementById('input-0');
@@ -49,10 +50,38 @@ $(function () {
 
 
 
+
+
+
+
     $(".filter__item-drop").on('click', function () {
-      $(this).toggleClass('filter__item-drop--active');
-      $(this).next().slideToggle(200);
+        $(this).toggleClass('filter__item-drop--active');
+        $(this).next().slideToggle(200);
     })
+
+
+
+
+
+
+    const rangeSliderr = document.getElementById('range-sliderr');
+
+
+    noUiSlider.create(rangeSliderr, {
+        start: [500, 5000],
+        connect: true,
+        // step: 1,
+        range: {
+            'min': [500],
+            'max': [5000]
+        },
+
+    });
+
+
+    const inputm0 = document.getElementById('inputm-0');
+    const inputm1 = document.getElementById('inputm-1');
+    const inputs = [inputm0, inputm1];
 
 
 });

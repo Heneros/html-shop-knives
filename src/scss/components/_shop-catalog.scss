@@ -130,21 +130,35 @@
             margin-top: 29px;
         }
 
-        .jq-radio {
+        .jq-radio,
+        .jq-checkbox {
             border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 2px;
             background: unset;
         }
 
-        .jq-radio.checked .jq-radio__div {
+        .jq-radio.checked .jq-radio__div,
+        .jq-checkbox.checked .jq-radio__div {
             border-radius: 1px;
             background: $tuliptree;
             border: unset;
             box-shadow: unset;
         }
 
-        .jq-radio.checked {
+        .jq-radio.checked,
+        .jq-checkbox.checked {
             border: 1px solid $tuliptree;
+        }
+
+        .jq-checkbox.checked .jq-checkbox__div {
+            border-radius: 1px;
+            background: #e8aa31;
+            border: unset;
+            box-shadow: unset;
+            transform: unset;
+            width: 10px;
+            height: 10px;
+            margin: 3px 0 0 3px
         }
 
         .label-box {
