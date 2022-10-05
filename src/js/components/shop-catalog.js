@@ -62,26 +62,84 @@ $(function () {
 
 
 
-
-
-    const rangeSliderr = document.getElementById('range-sliderr');
-
-
-    noUiSlider.create(rangeSliderr, {
-        start: [500, 5000],
+    var stepsSlider = document.getElementById('steps-slider');
+    var input0 = document.getElementById('input-with-keypress-0');
+    var input1 = document.getElementById('input-with-keypress-1');
+    var inputs = [input0, input1];
+    noUiSlider.create(stepsSlider, {
+        start: [100, 500],
         connect: true,
-        // step: 1,
         range: {
-            'min': [500],
-            'max': [5000]
+            'min': [100],
+            'max': [500]
         },
-
+    });
+    stepsSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = Math.round(values[handle]);
+    });
+    inputs.forEach(function (input, handle) {
+        input.addEventListener('change', function () {
+            stepsSlider.noUiSlider.setHandle(handle, this.value);
+        });
+        input.addEventListener('keydown', function (e) {
+            var values = stepsSlider.noUiSlider.get();
+        });
     });
 
 
-    const inputm0 = document.getElementById('inputm-0');
-    const inputm1 = document.getElementById('inputm-1');
-    const inputs = [inputm0, inputm1];
+
+
+    var stepsSlider = document.getElementById('length-slider');
+    var input0Length = document.getElementById('input-length-0');
+    var input1Length = document.getElementById('input-length-1');
+    var inputsTotalLength = [input0Length, input1Length];
+    noUiSlider.create(stepsSlider, {
+        start: [5, 10],
+        connect: true,
+        range: {
+            'min': [5],
+            'max': [100]
+        },
+    });
+    stepsSlider.noUiSlider.on('update', function (values, handle) {
+        inputsTotalLength[handle].value = Math.round(values[handle]);
+    });
+    inputsTotalLength.forEach(function (input, handle) {
+        input.addEventListener('change', function () {
+            stepsSlider.noUiSlider.setHandle(handle, this.value);
+        });
+        input.addEventListener('keydown', function (e) {
+            var values = stepsSlider.noUiSlider.get();
+        });
+    });
+
+
+
+    var widthSlider = document.getElementById('width-total-slider');
+    var input0Width = document.getElementById('input-width-0');
+    var input1Width = document.getElementById('input-width-1');
+    var inputsTotalWidth = [input0Width, input1Width];
+    noUiSlider.create(widthSlider, {
+        start: [5, 10],
+        connect: true,
+        range: {
+            'min': [5],
+            'max': [100]
+        },
+    });
+    widthSlider.noUiSlider.on('update', function (values, handle) {
+        inputsTotalWidth[handle].value = Math.round(values[handle]);
+    });
+    inputsTotalWidth.forEach(function (input, handle) {
+        input.addEventListener('change', function () {
+            widthSlider.noUiSlider.setHandle(handle, this.value);
+        });
+        input.addEventListener('keydown', function (e) {
+            var values = widthSlider.noUiSlider.get();
+        });
+    });
+
+
 
 
 });
