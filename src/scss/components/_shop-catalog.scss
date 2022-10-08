@@ -3,6 +3,7 @@
         grid-column: 3 span;
         background: #FEFEFE;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  
     }
 
     &__wrapper {
@@ -173,26 +174,67 @@
             margin-left: 15px;
             color: $tuliptree;
         }
+
         .shop-catalog__rating {
             cursor: pointer;
-    
+            display: flex;
+            align-items: baseline;
+
             img {
                 width: unset;
                 height: 22px;
             }
+
+            .label-box {
+                display: flex;
+                align-items: baseline;
+            }
+
+            &:not(:first-child) {
+                margin-top: 22px;
+            }
+
+            &:first-child {
+                margin-top: 20px;
+            }
+
+            .number {
+                color: $codgray;
+                font: $small-book-premiddle;
+                font-size: 16px;
+                padding-left: 15px;
+            }
+
+            .filter-style {
+                margin-right: 15px;
+            }
         }
-    
-
-
     }
 
+    &__filter-boxes {
+        .noUi-target {
+            margin-right: 29px;
+        }
+    }
 
-    &__filter-boxes, .ratings {
+    &__filter-boxes,
+    .ratings {
         margin-left: 31px;
     }
 
+    &__content {
+        margin-left: 31px;
+
+        .shop-catalog__price-element {
+            margin-right: 31px;
+        }
+    }
+
+
+    
     &__right {
         grid-column: 9 span;
+        margin-left: 32px;
     }
 
 
