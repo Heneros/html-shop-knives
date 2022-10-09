@@ -34,4 +34,50 @@
         }
     }
 
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .btn-loadmore {
+        background-color: transparent;
+        color: $tuliptree;
+        padding: 14px 69px;
+        font: $middle-book-higher;
+        border: 2px solid $tuliptree;
+        // box-shadow: unset;
+        filter: drop-shadow(0px 4px 20px rgba(232, 170, 49, 0.43));
+        border-radius: 3px;
+    }
+
+    &__pagination {
+        display: flex;
+
+        .link {
+            color: #000000;
+            font: $small-book-premiddle;
+        }
+
+        .prev {
+            img {
+                width: 27px;
+                height: 12px;
+                transform: rotate(90deg);
+            }
+        }
+
+        .next {
+            img {
+                width: 27px;
+                height: 25px;
+                transform: rotate(267deg);
+            }
+        }
+
+
+    }
+
+
 }
