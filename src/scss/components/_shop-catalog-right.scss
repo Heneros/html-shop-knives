@@ -7,5 +7,31 @@
     }
 
 
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
+    }
+
+    .bestsellers-products-item {
+        margin-top: 30px;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        .bestsellers-products-item__bottom {
+            padding-bottom: 36px;
+        }
+
+        .sale {
+            margin-top: 20px;
+            position: absolute;
+            background-color: $tuliptree;
+            color: #fff;
+            font: $middle-book-high;
+            padding: 7px 22px;
+        }
+    }
 
 }
