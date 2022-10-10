@@ -58,14 +58,31 @@
         .link {
             color: #000000;
             font: $small-book-premiddle;
+      
         }
 
-        .prev {
-            img {
-                width: 27px;
-                height: 12px;
-                transform: rotate(90deg);
+        .item-pagination {
+            padding: 0 30px;
+
+            &:not(:first-child) {
+                padding: 0 30px;
             }
+
+            &:not(:last-child) {
+                padding: 0 30px;
+
+            }
+        }
+
+        .link-prev {
+            background: url('../img/sprite.svg#arrow-gray') no-repeat center center;
+            // background-position: center center;
+            height: 20px;
+            width: 20px;
+            display: block;
+            transform: rotate(90deg);
+            top: 2px;
+            position: relative;
         }
 
         .next {
