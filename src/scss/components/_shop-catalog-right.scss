@@ -54,44 +54,82 @@
 
     &__pagination {
         display: flex;
+        align-items: center;
+
+        .item-pagination {
+            padding-right: 25px;
+
+            &:last-of-type {
+                padding-right: unset;
+            }
+
+        }
+
 
         .link {
             color: #000000;
             font: $small-book-premiddle;
-      
+            transition: .3s ease-out;
+            padding: 13px;
+
+            &:hover {
+                border-radius: 50%;
+                padding: 8px 13px;
+                color: #fff;
+                background-color: $tuliptree;
+            }
         }
 
-        .item-pagination {
-            padding: 0 30px;
-
-            &:not(:first-child) {
-                padding: 0 30px;
-            }
-
-            &:not(:last-child) {
-                padding: 0 30px;
-
-            }
+        .active {
+            border-radius: 50%;
+            padding: 8px 13px;
+            color: #fff;
+            background-color: $tuliptree;
         }
 
         .link-prev {
             background: url('../img/sprite.svg#arrow-gray') no-repeat center center;
-            // background-position: center center;
-            height: 20px;
-            width: 20px;
+            height: 19px;
+            width: 35px;
             display: block;
             transform: rotate(90deg);
-            top: 2px;
+            top: 0px;
+            left: 6px;
             position: relative;
-        }
+            padding: unset;
 
-        .next {
-            img {
-                width: 27px;
-                height: 25px;
-                transform: rotate(267deg);
+            &:hover {
+                background-color: unset;
+                border-radius: unset;
+                padding: unset;
             }
         }
+
+        .link-next {
+            background: url('../img/sprite.svg#arrow') no-repeat center center;
+            height: 19px;
+            width: 35px;
+            display: block;
+            transform: rotate(267deg);
+            top: 0px;
+            left: 6px;
+            position: relative;
+            padding: unset;
+
+            &:hover {
+                background-color: unset;
+                border-radius: unset;
+                padding: unset;
+            }
+        }
+
+        // .next {
+        //     img {
+        //         width: 27px;
+        //         height: 25px;
+        //         transform: rotate(267deg);
+        //     }
+        // }
 
 
     }
