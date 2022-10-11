@@ -63,6 +63,11 @@
                 padding-right: unset;
             }
 
+            &:nth-child(5) {
+                // display: none;
+                padding-right: unset;
+            }
+
         }
 
 
@@ -93,8 +98,8 @@
             width: 35px;
             display: block;
             transform: rotate(90deg);
-            top: 0px;
-            left: 6px;
+            top: 0;
+            right: 15px;
             position: relative;
             padding: unset;
 
@@ -102,6 +107,7 @@
                 background-color: unset;
                 border-radius: unset;
                 padding: unset;
+
             }
         }
 
