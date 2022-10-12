@@ -142,4 +142,19 @@ $(function () {
 
 
 
+    ////adaptive filters
+    // $("#btn-filters").on('click', function () {
+    //     $(".shop-catalog__left").addClass("test");
+    // })
+
+
+
+    const btnFilter = document.querySelector("#btn-filters");
+    const shopCatalogLeft = document.querySelector(".shop-catalog__left");
+    // 
+
+    const activeFilterClass = "activeLeft";
+    btnFilter.addEventListener("click", function () {
+        shopCatalogLeft.classList.toggle(activeFilterClass);
+    });
 });

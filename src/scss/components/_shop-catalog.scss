@@ -1,0 +1,33 @@
+@media(max-width: 1150px) {
+    .shop-catalog {
+
+        &__left {
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: 100%;
+            z-index: 10000;
+            height: 100%;
+            width: 100%;
+            transform: translate(-100%);
+            transition: all .5s linear;
+            overflow-y: auto;
+        }
+
+        .activeLeft {
+            transform: translateZ(0);
+            transition: all .5s;
+            right: 50%;
+            display: block;
+            transition: .5s;
+        }
+
+        // .btn-loadmore {
+        //     display: none;
+        // }
+
+        &__right {
+            grid-column: 12 span !important;
+        }
+    }
+}

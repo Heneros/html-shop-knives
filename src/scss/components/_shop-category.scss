@@ -68,5 +68,8 @@
         border-left: unset;
     }
 
+    .btn-shop {
+        @include btn-shop;
+    }
 
 }
