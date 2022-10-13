@@ -2,7 +2,7 @@
     .shop-catalog {
 
         &__left {
-            display: flex;
+            // display: block;
             position: absolute;
             top: 0;
             right: 100%;
@@ -12,22 +12,36 @@
             transform: translate(-100%);
             transition: all .5s linear;
             overflow-y: auto;
+            width: unset;
         }
 
         .activeLeft {
             transform: translateZ(0);
             transition: all .5s;
             right: 50%;
-            display: block;
-            transition: .5s;
+            transition: all .5s;
         }
 
-        // .btn-loadmore {
-        //     display: none;
-        // }
+        &__filter {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__filter-products {
+            margin-top: 0;
+        }
 
         &__right {
             grid-column: 12 span !important;
+        }
+    }
+}
+
+@media(min-width: 1150px) {
+    .shop-catalog {
+        .btn-shop {
+            display: none;
         }
     }
 }

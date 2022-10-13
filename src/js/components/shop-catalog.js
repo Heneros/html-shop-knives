@@ -154,7 +154,26 @@ $(function () {
     // 
 
     const activeFilterClass = "activeLeft";
-    btnFilter.addEventListener("click", function () {
+
+    // document.onclick = function (e) {
+
+    // }
+
+
+    btnFilter.addEventListener("click", function (e) {
+
+        // if (e.target.id !== btnFilter && e.target.id !== shopCatalogLeft) {
+        //     shopCatalogLeft.classList.toggle('activeLeft');
+         
+        // }
+
         shopCatalogLeft.classList.toggle(activeFilterClass);
+        // if (!shopCatalogLeft.classList.contains('activeLeft')) {
+        //     shopCatalogLeft.classList.remove(activeFilterClass);
+        // }
+
     });
+
+
+
 });
