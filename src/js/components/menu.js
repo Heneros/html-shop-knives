@@ -9,6 +9,7 @@ document.querySelectorAll('.js-select').forEach(e => {
                 e.classList.remove('select-header__visible');
                 e.classList.remove('open');
                 document.querySelector(`[data-target=${menu}]`).classList.add('select-header__visible');
+               
                 intervalId = setTimeout(() => {
                     document.querySelector(`[data-target=${menu}]`).classList.add('open');
                 }, 0);

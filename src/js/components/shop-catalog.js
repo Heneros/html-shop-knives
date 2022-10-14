@@ -149,31 +149,84 @@ $(function () {
 
 
 
-    const btnFilter = document.querySelector("#btn-filters");
-    const shopCatalogLeft = document.querySelector(".shop-catalog__left");
-    // 
-
-    const activeFilterClass = "activeLeft";
 
     // document.onclick = function (e) {
 
     // }
 
 
-    btnFilter.addEventListener("click", function (e) {
+    // btnFilter.addEventListener("click", function (e) {
 
-        // if (e.target.id !== btnFilter && e.target.id !== shopCatalogLeft) {
-        //     shopCatalogLeft.classList.toggle('activeLeft');
-         
+    //     // if (e.target.id !== btnFilter && e.target.id !== shopCatalogLeft) {
+    //     //     shopCatalogLeft.classList.toggle('activeLeft');
+
+    //     // }
+
+    //     shopCatalogLeft.classList.toggle(activeFilterClass);
+    //     // if (!shopCatalogLeft.classList.contains('activeLeft')) {
+    //     //     shopCatalogLeft.classList.remove(activeFilterClass);
+    //     // }
+
+    // });
+
+
+
+    const btnFilter = document.querySelector("#btn-filters");
+    const shopCatalogLeft = document.querySelector(".shop-catalog__left");
+    // 
+
+    const activeFilterClass = "activeLeft";
+
+
+    btnFilter.addEventListener('click', e => {
+        // alert(123);
+        const menu = e.currentTarget.dataset.path;
+        if (!document.querySelector('.shop-catalog__left').classList.contains('activeLeft')) {
+            // alert(123)
+            document.querySelector(`.shop-catalog__left`).classList.add('activeLeft');
+        } else {
+            document.querySelector(`.shop-catalog__left`).classList.remove('activeLeft');
+        }
+
+        // window.onclick = e => {
+        //     if (e.target ==  document.querySelector(`.shop-catalog__left`) || e.target == document.querySelector(`[data-path=${menu}]` || e.target ==document.querySelector("#btn-filters"))) {
+        //         return
+        //     } else {
+        //         document.querySelector(`.shop-catalog__left`).classList.remove('activeLeft');
+        //     }
+        // }
+        // if (document.querySelector('.shop-catalog__left').classList.contains('activeLeft')) {
+        //     document.querySelector(`.shop-catalog__left`).classList.remove('activeLeft');
         // }
 
-        shopCatalogLeft.classList.toggle(activeFilterClass);
-        // if (!shopCatalogLeft.classList.contains('activeLeft')) {
-        //     shopCatalogLeft.classList.remove(activeFilterClass);
-        // }
 
-    });
+        // document.querySelectorAll('.select-header__main').forEach(e => {
+        //     if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+        //         e.classList.remove('select-header__visible');
+        //         e.classList.remove('open');
+        //         document.querySelector(`[data-target=${menu}]`).classList.add('select-header__visible');
+        //         intervalId = setTimeout(() => {
+        //             document.querySelector(`[data-target=${menu}]`).classList.add('open');
+        //         }, 0);
+        //     }
 
+        //     if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+        //         clearTimeout(intervalId);
+        //         document.querySelector(`[data-target=${menu}]`).classList.remove('select-header__visible');
+        //         intervalId = setTimeout(() => {
+        //             document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+        //         }, 0);
+        //     }
 
+        //     window.onclick = e => {
+        //         if (e.target == document.querySelector(`[data-target=${menu}]`) || e.target == document.querySelector(`[data-path=${menu}]` || e.target == document.querySelector('select-header__main'))) {
+        //             return
+        //         } else {
+        //             document.querySelector(`[data-target=${menu}]`).classList.remove('select-header__visible');
+        //             document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+        //         }
+        //     }
+        // })
+    })
 
 });
