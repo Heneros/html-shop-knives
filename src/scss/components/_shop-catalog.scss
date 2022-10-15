@@ -2,23 +2,33 @@
     .shop-catalog {
 
         &__left {
-            // display: block;
-            position: absolute;
+            display: flex;
+            position: fixed;
             top: 0;
-            right: 100%;
-            z-index: 10000;
-            height: 100%;
+            left: -925px;
             width: 100%;
-            transform: translate(-100%);
-            transition: all .5s linear;
-            overflow-y: auto;
-            width: unset;
+            height: 100%;
+            z-index: 300;
+            // display: block;
+            // position: absolute;
+            // top: 0;
+            // right: 100%;
+            // z-index: 10000;
+            // height: 100%;
+            // width: 100%;
+            // transform: translate(-100%);
+            // transition: all .5s linear;
+            // overflow-y: auto;
+            // width: unset;
         }
 
         .activeLeft {
-            transform: translateZ(0);
-            right: 61%;
-            transition: all .5s;
+            // transform: translateZ(0);
+            // right: 61%;
+            // transition: all .5s;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(15px);
+            left: 0 !important;
         }
 
         &__filter {
@@ -34,6 +44,24 @@
         &__right {
             grid-column: 12 span !important;
         }
+
+        .blur {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(15px);
+            left: 0 !important;
+        }
+
+        .blank {
+            // height: 100%;
+            // flex: 1;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+
     }
 }
 

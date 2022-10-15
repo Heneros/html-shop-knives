@@ -115,6 +115,7 @@ img {
     .flashlights {
         .text-above {
             margin: 0 35px;
+
             .catalog {
                 &::after {
                     content: "";
@@ -187,3 +188,4 @@ img {
         height: 10px;
     }
 }
+
