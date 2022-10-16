@@ -176,7 +176,9 @@ $(function () {
     const shopCatalog = document.querySelector(".shop-catalog");
     const body = document.querySelector("body");
     const activeFilterClass = "activeLeft";
+    const overflowHidden = "overflowHidden";
     const blank = shopCatalogLeft.querySelector(".blank");
+
 
 
     const close = () => {
@@ -188,7 +190,8 @@ $(function () {
     btnFilter.addEventListener("click", (e) => {
         shopCatalogLeft.classList.add("activeLeft");
         shopCatalogLeft.classList.add("blur");
-        body.classList.add("body");
+        body.classList.add("overflowHidden");
+
     })
 
     blank.addEventListener("click", (e) => {
