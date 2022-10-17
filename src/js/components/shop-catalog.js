@@ -173,6 +173,7 @@ $(function () {
 
     const btnFilter = document.querySelector("#btn-filters");
     const shopCatalogLeft = document.querySelector(".shop-catalog__left");
+    const shopCatalogFilters = document.querySelector(".shop-catalog__filters");
     const shopCatalog = document.querySelector(".shop-catalog");
     const body = document.querySelector("body");
     const activeFilterClass = "activeLeft";
@@ -182,13 +183,13 @@ $(function () {
 
 
     const close = () => {
-        shopCatalogLeft.classList.remove("activeLeft");
+        shopCatalogFilters.classList.remove("activeLeft");
         shopCatalogLeft.classList.remove("blur");
-        body.classList.remove("body");
+        body.classList.remove("overflowHidden");
     };
 
     btnFilter.addEventListener("click", (e) => {
-        shopCatalogLeft.classList.add("activeLeft");
+        shopCatalogFilters.classList.add("activeLeft");
         shopCatalogLeft.classList.add("blur");
         body.classList.add("overflowHidden");
 

@@ -2,26 +2,29 @@
     .shop-catalog {
 
         &__left {
-            display: flex;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 300;
-            transform: translate(-100%);
-            transition: all .5s linear;
-            // display: block;
+            // display: flex;
             // position: absolute;
             // top: 0;
-            // right: 100%;
-            // z-index: 10000;
-            // height: 100%;
+            // left: 0;
             // width: 100%;
+            // height: 100%;
+            // z-index: 300;
             // transform: translate(-100%);
             // transition: all .5s linear;
-            // overflow-y: auto;
-            // width: unset;
+
+            // display: flex;
+            display: block;
+            position: fixed;
+            top: 0;
+            left: -925px;
+            // width: 100%;
+            height: 100% !important;
+            z-index: 300;
+            margin-top: unset !important;
+        }
+
+        .shop-catalog__left.blur {
+            width: 100%;
         }
 
         .activeLeft {
@@ -30,9 +33,10 @@
             // transition: all .5s;
             // background: rgba(0, 0, 0, 0.6);
             // backdrop-filter: blur(15px);
-            right: 50% !important;
-            transform: translateZ(0);
-            overflow-y: scroll;
+            // right: 50% !important;
+            // transform: translateZ(0);
+            // overflow-y: scroll;
+            left: 0 !important;
         }
 
 
@@ -45,14 +49,14 @@
         &__filters {
             background-color: #fefefe;
             z-index: 999999;
-            // box-shadow: 2px 0 12px rgba(0 0 0 / 40%);
-
-            // height: 100%;
-            // background: #fff;
-            // flex-direction: column;
-            // position: fixed;
-            // transition: all .5s linear;
-            // overflow: auto;
+            height: 100%;
+            min-width: 225px;
+            flex-direction: column;
+            position: fixed;
+            // left: -240px;
+            left: -60%;
+            transition: all 200ms linear;
+            overflow: auto;
         }
 
         &__filter-products {
@@ -64,9 +68,14 @@
         }
 
         .blur {
+            // background: rgba(0, 0, 0, 0.6);
+            // backdrop-filter: blur(15px);
+            // // right: 0 !important;
+
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(15px);
-            // right: 0 !important;
+            left: 0 !important;
+
         }
 
         .blank {
