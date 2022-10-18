@@ -46,3 +46,11 @@
         margin-left: -20px;
     }
 }
+
+@media(max-width: 650px) {
+    .description-company {
+        .description-company__paragraph {
+            padding: 0px 50px
+        }
+    }
+}
