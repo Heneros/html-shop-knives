@@ -108,7 +108,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .pagination {
+                margin-top: 40px;
+            }
         }
+
+        .shop-catalog__products {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 3fr));
+        }
+
     }
 
 }
