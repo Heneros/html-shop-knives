@@ -100,7 +100,44 @@
     }
 
     .line {
-        margin-top: 29px;
         border: 1px solid rgba(20, 20, 20, 0.15);
     }
+
+    &__right-top-block {
+        margin-bottom: 30px;
+    }
+
+    &__right-middle {
+        display: flex;
+        margin: 30px 0;
+    }
+
+    // &__right-list {
+    //     margin: 30px 0;
+    // }
+
+    &__right-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right-item-left {
+        font: $small-book-premiddle;
+        color: #141414;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__right-item-right {
+        font: $small-book-premiddle;
+        color: rgba(20, 20, 20, 0.5);
+        margin-left: 30px;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
 }
