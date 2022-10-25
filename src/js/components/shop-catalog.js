@@ -1,17 +1,6 @@
 $(function () {
     $('.filter-style').styler();
 
-    // $(".js-range-slider").ionRangeSlider({
-    //     type: "double",
-    //     min: 100,
-    //     max: 5000,
-    // });
-
-
-
-
-
-
     const rangeSlider = document.getElementById('range-slider');
 
     if (rangeSlider) {
@@ -143,34 +132,6 @@ $(function () {
 
 
     ////adaptive filters
-    // $("#btn-filters").on('click', function () {
-    //     $(".shop-catalog__left").addClass("test");
-    // })
-
-
-
-
-    // document.onclick = function (e) {
-
-    // }
-
-
-    // btnFilter.addEventListener("click", function (e) {
-
-    //     // if (e.target.id !== btnFilter && e.target.id !== shopCatalogLeft) {
-    //     //     shopCatalogLeft.classList.toggle('activeLeft');
-
-    //     // }
-
-    //     shopCatalogLeft.classList.toggle(activeFilterClass);
-    //     // if (!shopCatalogLeft.classList.contains('activeLeft')) {
-    //     //     shopCatalogLeft.classList.remove(activeFilterClass);
-    //     // }
-
-    // });
-
-
-
     const btnFilter = document.querySelector("#btn-filters");
     const shopCatalogLeft = document.querySelector(".shop-catalog__left");
     const shopCatalogFilters = document.querySelector(".shop-catalog__filters");
