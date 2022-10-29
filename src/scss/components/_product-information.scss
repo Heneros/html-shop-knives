@@ -285,7 +285,57 @@
             display: inline-block;
             padding-right: 15px;
         }
+    }
 
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+
+        .icon-plus,
+        .icon-minus {
+            background-color: $codgray;
+            color: #fff;
+            padding: 20px;
+            font: $small-book-middle;
+            font-size: 24px;
+            transition: background-color .3s;
+            border: unset;
+            outline: unset;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $tuliptree;
+
+            }
+        }
+
+        .btn-yellow {
+            
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+
+
+
+    }
+
+    &__input {
+        background: rgba(210, 210, 210, 0.15);
+        border-radius: 3px;
+        border: unset;
+        outline: unset;
+        color: $codgray;
+        font: $small-book-premiddle;
+        padding: 14px 22px;
+        text-align: center;
+        width: 50px;
+    }
+
+    .group-btns {
+        display: inline-flex;
     }
 
 }
