@@ -351,6 +351,7 @@
             right: 20px;
             position: relative;
             transition: background-color .3s ease-in;
+            padding-right: 18px;
 
             &:hover {
                 background-color: $codgray;

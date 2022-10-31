@@ -1,0 +1,56 @@
+.product-tabs {
+    margin-top: 120px;
+
+    .description {
+        display: none;
+    }
+
+    .characteristic {
+        display: none;
+    }
+
+    .feedback {
+        display: none;
+    }
+
+    .delivery {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .tabs-items {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    li {
+        margin-right: 30px;
+
+
+
+        .item-tab {
+            font: $middle-book-higher;
+            color: rgba(20, 20, 20, 0.5);
+        }
+    }
+
+    li {
+
+        .active {
+            color: $codgray;
+            font: $bold-book;
+            font-size: 20px;
+        }
+
+        &:last-of-type {
+            margin-right: unset;
+        }
+    }
+
+
+
+}
