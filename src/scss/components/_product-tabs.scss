@@ -19,6 +19,7 @@
 
     .active {
         display: block;
+        // display: block;
     }
 
     .tabs-items {
@@ -50,15 +51,14 @@
     }
 
     li {
-
         .active {
             color: $codgray;
             font: $bold-book;
             font-size: 20px;
-
             padding-bottom: 24px;
             border-bottom: 2px solid $tuliptree;
             z-index: 999;
+            position: relative;
         }
 
         &:last-of-type {
@@ -69,8 +69,49 @@
     &__container {
         background: #FEFEFE;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-        margin: 0 30px;
+        padding: 30px;
+
     }
+
+    .js-tabs-body {
+        font: $small-book-premiddle;
+    }
+
+    .characteristic.active {
+        display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(33%, 3fr));
+        grid-template-columns: 22% 28% 47%;
+    }
+
+    .item {
+        border-right: 1px solid rgba(20, 20, 20, .15);
+        margin-right: 45px;
+
+        &:last-child {
+            border-right: unset;
+        }
+    }
+
+    .container-lists {
+        display: flex;
+        margin-top: 30px;
+
+        li {
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: unset;
+            }
+        }
+    }
+
+
+    .sub-title {
+        color: $codgray;
+        font: $bold-book;
+    }
+
+
 
 
 }
