@@ -125,6 +125,23 @@
         }
     }
 
+    .feedback-item {
 
 
+        &__head {
+            display: inline-flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        .name-star {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stars {
+            display: inline-flex;
+
+        }
+    }
 }

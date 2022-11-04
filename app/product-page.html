@@ -656,13 +656,13 @@
     <div class="container">
         <div class="product-tabs__container">
             <ul class="tabs-items js-tabs list-reset">
-                <li><a href="#!" class="item-tab js-tabs-head-item description-tab active">
+                <li><a href="#!" class="item-tab js-tabs-head-item description-tab ">
                         Description
                     </a></li>
                 <li><a href="#!" class="item-tab js-tabs-head-item characteristic-tab">
                         Characteristic
                     </a></li>
-                <li><a href="#!" class="item-tab js-tabs-head-item feedback-tab">
+                <li><a href="#!" class="item-tab js-tabs-head-item feedback-tab active">
                         Feedback
                     </a></li>
                 <li><a href="#!" class="item-tab js-tabs-head-item delivery-tab">
@@ -671,7 +671,7 @@
             </ul>
             <div class="line"></div>
             <div class="js-tabs-body">
-                <div data-tab="description" class="description js-tabs-body-item active">
+                <div data-tab="description" class="description js-tabs-body-item ">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in dolorem inventore possimus
                         velit modi maiores ea veniam accusantium, <b>
@@ -731,10 +731,42 @@
                         </div>
                     </div>
                 </div>
-                <div data-tab="feedback" class="feedback js-tabs-body-item">
-                    <p class="description">Current product not available
+                <div data-tab="feedback" class="feedback js-tabs-body-item active">
+                    <!-- Not available -->
+                    <!-- <p class="description">Current product not available
                         <button class="btn write-review">Write review</button>
-                    </p>
+                    </p> -->
+                    <!-- Not available -->
+                    <div class="feedback-item">
+                        <div class="feedback-item__head">
+                            <div class="feedback-item__img">
+                                <img src="img/feedback-user.png" alt="feedback-user">
+                            </div>
+                            <div class="feedback-item__info">
+                                <div class="feedback-item__heading">
+                                    <div class="name-star">
+                                        <span class="name">
+                                            Test Title
+                                        </span>
+                                        <div class="stars">
+                                            <img src="img/star.svg" alt="icon star">
+                                            <img src="img/star.svg" alt="icon star">
+                                            <img src="img/star.svg" alt="icon star">
+                                            <img src="img/star.svg" alt="icon star">
+                                            <img src="img/star.svg" alt="icon star">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    29.06.2022
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item-body">
+
+                        </div>
+                    </div>
                 </div>
                 <div data-tab="delivery" class="delivery js-tabs-body-item">
                     delivery
