@@ -111,6 +111,19 @@
         font: $bold-book;
     }
 
+    .feedback.active>p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .write-review {
+            background: #000000;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            font: $middle-book-high;
+            padding: 18px 37px;
+        }
+    }
 
 
 
