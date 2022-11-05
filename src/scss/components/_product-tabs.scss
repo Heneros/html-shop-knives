@@ -26,6 +26,35 @@
         display: flex;
         justify-content: left;
         align-items: center;
+
+        li {
+            margin-right: 30px;
+            margin-bottom: 44px;
+
+            .item-tab {
+                font: $middle-book-higher;
+                color: rgba(20, 20, 20, 0.5);
+                margin-bottom: -25px;
+                border-bottom: 2px solid transparent;
+            }
+        }
+
+        li {
+            .active {
+                color: $codgray;
+                font: $bold-book;
+                font-size: 20px;
+                padding-bottom: 24px;
+                border-bottom: 2px solid $tuliptree;
+                z-index: 999;
+                position: relative;
+            }
+
+            &:last-of-type {
+                margin-right: unset;
+            }
+        }
+
     }
 
     .line {
@@ -38,33 +67,6 @@
 
     }
 
-    li {
-        margin-right: 30px;
-        margin-bottom: 44px;
-
-        .item-tab {
-            font: $middle-book-higher;
-            color: rgba(20, 20, 20, 0.5);
-            margin-bottom: -25px;
-            border-bottom: 2px solid transparent;
-        }
-    }
-
-    li {
-        .active {
-            color: $codgray;
-            font: $bold-book;
-            font-size: 20px;
-            padding-bottom: 24px;
-            border-bottom: 2px solid $tuliptree;
-            z-index: 999;
-            position: relative;
-        }
-
-        &:last-of-type {
-            margin-right: unset;
-        }
-    }
 
     &__container {
         background: #FEFEFE;
@@ -98,6 +100,7 @@
 
         li {
             margin-bottom: 20px;
+            margin-right: 30px;
 
             &:last-of-type {
                 margin-bottom: unset;
@@ -184,9 +187,53 @@
         }
 
         .item-body {
-            margin: 0 112px;
+            margin: 15px 0px 0 112px;
             margin-top: -15px;
         }
 
+        .item-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 21px;
+        }
+
+        .reply {
+            color: $tuliptree;
+            font: $middle-book-high;
+            cursor: pointer;
+        }
+
+        .favorites {
+            cursor: pointer;
+
+            img {
+                height: 24px;
+            }
+        }
     }
+
+    //feedback item
+
+    .delivery-location {
+        // display: flex;
+        // align-items: center;
+        display: grid;
+        grid-template-columns: 158px 88%;
+
+        .delivery-title {
+            color: $codgray;
+            font: $middle-book-high;
+            margin-right: 30px;
+        }
+
+        .info-dropdown {
+            width: 15%;
+        }
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
 }

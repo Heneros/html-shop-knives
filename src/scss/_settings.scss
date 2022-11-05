@@ -189,3 +189,69 @@ img {
     }
 }
 
+
+
+
+.info-dropdown {
+    .jq-selectbox {
+        width: 100%;
+    }
+
+    .jq-selectbox__select {
+        width: 80%;
+
+        background: #fff;
+        height: 40px;
+        padding: 0 45px 0 10px;
+        border: 1px solid rgba(4, 4, 4, 0.15);
+        border-radius: 3px;
+        box-shadow: unset;
+        font: $small-book;
+        font-size: 14px;
+        line-height: 39px;
+        color: rgba(20, 20, 20, 0.5);
+        text-shadow: unset;
+
+        &:hover {
+            background: unset;
+        }
+    }
+
+    .jq-selectbox__dropdown {
+        width: 90%;
+    }
+
+    .jq-selectbox li:hover {
+        background-color: $codgray;
+    }
+
+    .jq-selectbox li.selected {
+        background-color: $codgray;
+    }
+
+    .jq-selectbox__trigger {
+        background-color: $codgray;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        position: absolute;
+        top: 14px;
+        right: 24px;
+        width: 0;
+        height: 0;
+        border-top: unset;
+        border-right: unset;
+        border-left: unset;
+
+        &::after {
+            content: "";
+            width: 16px;
+            height: 10px;
+            position: relative;
+            display: block;
+            background: url('../img/sprite.svg#arrow') no-repeat;
+        }
+    }
+
+
+}
