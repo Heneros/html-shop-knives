@@ -216,8 +216,7 @@
     //feedback item
 
     .delivery-location {
-        // display: flex;
-        // align-items: center;
+
         display: grid;
         grid-template-columns: 158px 88%;
 
@@ -233,6 +232,11 @@
 
         &:not(:first-child) {
             margin-top: 20px;
+        }
+
+        .jq-selectbox__dropdown {
+            width: 100% !important;
+            top: unset !important;
         }
     }
 
