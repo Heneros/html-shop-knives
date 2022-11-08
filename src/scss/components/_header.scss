@@ -230,9 +230,27 @@
     &__cart-svg {
         position: relative;
 
-        img {
-            width: 31px;
-            height: 35px;
+        // img {
+        //     width: 31px;
+        //     height: 35px;
+        // }
+        background: url("../img/cart.svg") no-repeat center center;
+        ;
+        height: 35px;
+        width: 31px;
+        display: block;
+        transition: .3s ease-in;
+
+        &:hover {
+            background: url("../img/cart-hover.svg") no-repeat center center;
+        }
+
+        &:focus {
+            background: url("../img/cart-hover.svg") no-repeat center center;
+        }
+
+        &:active {
+            background: url("../img/cart-hover.svg") no-repeat center center;
         }
     }
 
