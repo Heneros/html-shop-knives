@@ -4,7 +4,7 @@
 
 .cards-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(475px, 3fr));
+    grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
     gap: 30px;
 }
 
@@ -23,24 +23,11 @@
 
     &__text {
         padding: 6px 30px;
-        flex-basis: 45%;
+        width: 50%;
         z-index: 5;
     }
 
-    &__bg-img {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: right center;
-        padding-top: 50px;
-        transition: all .3s;
 
-        &:hover {
-            background-position: right;
-            transform: scale(1.2);
-        }
-    }
 
     &__title {
         font-weight: 600;
@@ -94,6 +81,21 @@
         }
     }
 
+    &__img {
+        width: 50%;
+        // overflow: hidden;
+
+        img {
+            transition: transform .5s ease-in-out;
+        }
+
+        &:hover img {
+            transform: scale(2) rotate(5deg);
+        }
+
+    }
+
+
 }
 
 @media(min-width: 768px) {
@@ -117,6 +119,7 @@
 
         .cards-item {
             flex-direction: column-reverse;
+            align-items: center;
         }
 
         .cards-item__tablet-img {
