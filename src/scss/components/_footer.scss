@@ -124,11 +124,17 @@
             &:not(:last-child) {
                 padding-right: 21px;
             }
+
         }
 
         img {
             width: 43px;
             height: 43px;
+            transition: all .6s ease-in-out;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
         }
     }
 
@@ -192,11 +198,11 @@
         transition: .3s ease-out;
 
         &:focus {
-            border: 1px solid $tuliptree  !important;
+            border: 1px solid $tuliptree !important;
         }
 
         &:active {
-            border: 1px solid $tuliptree  !important;
+            border: 1px solid $tuliptree !important;
         }
     }
 
@@ -333,7 +339,7 @@
         }
 
         .footer-item__form {
-            .footer-item-email{
+            .footer-item-email {
                 max-width: 100%;
             }
         }

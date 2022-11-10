@@ -50,7 +50,7 @@
         align-items: center;
 
         .item-pagination {
-            padding-right: 25px;
+            padding-right: 15px;
 
             &:last-of-type {
                 padding-right: unset;
@@ -61,7 +61,7 @@
             }
 
 
-            &:nth-child(5) {
+            &:nth-child(7) {
                 // display: none;
                 padding-right: unset;
                 position: relative;
