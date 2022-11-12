@@ -92,11 +92,12 @@ img {
 
     &::after {
         content: "";
-        background-image: url('../img/cart-white.svg');
-        width: 19px;
-        height: 19px;
+        background: url('../img/cart-white.svg') no-repeat;
+        width: 27px;
+        height: 27px;
         position: absolute;
         margin-left: 15px;
+        margin-top: -4px;
     }
 }
 
@@ -199,7 +200,6 @@ img {
 
     .jq-selectbox__select {
         width: 80%;
-
         background: #fff;
         height: 40px;
         padding: 0 45px 0 10px;
@@ -263,7 +263,6 @@ img {
     top: 0;
     bottom: 0;
     right: -234px;
-    // left: -234px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

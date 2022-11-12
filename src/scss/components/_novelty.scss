@@ -109,6 +109,14 @@
                 max-width: 760px;
             }
 
+            .novelty-text {
+                flex: 100%;
+                text-align: center;
+            }
+
+            .novelty-text .novelty-description {
+                padding-right: unset;
+            }
         }
     }
 
