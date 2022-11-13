@@ -607,7 +607,25 @@
 
         &__icon {
             height: 27px;
+
         }
+
+        &__person {
+            position: relative;
+            right: 18px;
+            background: url('../img/person.svg') center center no-repeat;
+            display: block;
+            width: 22px;
+            height: 29px;
+
+            &:hover {
+                position: relative;
+                background: url('../img/person-hover.svg') center center no-repeat;
+                display: block;
+            }
+        }
+
+
 
         &__cart {
             position: relative;
