@@ -145,7 +145,7 @@ jQuery(document).ready(function ($) {
     const shopCatalogLeft = document.querySelector(".shop-catalog__left");
     const shopCatalogFilters = document.querySelector(".shop-catalog__filters");
     const body = document.querySelector("body");
-    const blank = shopCatalogLeft.querySelector(".blank");
+    const blank = document.querySelector(".blank");
 
 
 
@@ -155,16 +155,19 @@ jQuery(document).ready(function ($) {
         body.classList.remove("overflowHidden");
     };
 
-    btnFilter.addEventListener("click", (e) => {
-        shopCatalogFilters.classList.add("activeLeft");
-        shopCatalogLeft.classList.add("blur");
-        body.classList.add("overflowHidden");
-    });
+    if (btnFilter != null) {
+        btnFilter.addEventListener("click", (e) => {
+            shopCatalogFilters.classList.add("activeLeft");
+            shopCatalogLeft.classList.add("blur");
+            body.classList.add("overflowHidden");
+        });
+    }
 
-    blank.addEventListener("click", (e) => {
-        close();
-    });
-
+    if (blank != null) {
+        blank.addEventListener("click", (e) => {
+            close();
+        });
+    }
 
 
 })

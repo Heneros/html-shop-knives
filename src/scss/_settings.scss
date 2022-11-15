@@ -299,3 +299,20 @@ body.activeBody .main-wrapperOverflow {
 .main-wrapperOverflow {
     display: none;
 }
+
+.hamburger:hover .hamburger-bar,
+.hamburger:hover:after,
+.hamburger:hover:before {
+    background-color: $tuliptree;
+}
+
+.hamburger.is-active:hover:after,
+.hamburger.is-active:hover:before {
+    background-color: $tuliptree;
+}
+
+// .hamburger:hover .hamburger-bar,
+// .hamburger:after,
+// .hamburger:before {
+//     background-color: red;
+// }
