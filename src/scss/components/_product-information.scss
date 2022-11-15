@@ -472,6 +472,17 @@
         &__right-block {
             grid-template-columns: unset;
         }
+
+        .mySwiperGallery1 img {
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .mySwiperGallery2 img {
+            height: 100%;
+        }
+
+
     }
 
 

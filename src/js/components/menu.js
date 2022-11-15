@@ -84,7 +84,7 @@ document.querySelectorAll('.js-select').forEach(e => {
 
 const header__logo = document.querySelector('.header__logo');
 
-
+const body = document.querySelector('body');
 const pageHeader = document.querySelector(".page-header");
 const header__search = document.querySelector('.header__search-field');
 // const toggleMenu = document.querySelector(".toggle-menu");
@@ -104,7 +104,9 @@ toggleMenu.addEventListener("click", function () {
     toggleMenu.classList.toggle(isActiveClass);
     header__logo.classList.toggle('hidden');
     header__search.classList.toggle('visible');
+    body.classList.toggle('noOverflow');
 
+    
     if (!this.classList.contains(isVisibleClass)) {
         listWrapper2.classList.remove(isVisibleClass);
         listWrapper3.classList.remove(isVisibleClass);
@@ -125,6 +127,7 @@ for (const level1Link of level1Links) {
             subMenuWrapper2.innerHTML = "";
             subMenuWrapper2.append(cloneSiblingList);
             listWrapper2.classList.add(isVisibleClass);
+
         }
     });
 }
