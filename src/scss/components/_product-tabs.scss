@@ -19,7 +19,6 @@
 
     .active {
         display: block;
-        // display: block;
     }
 
     .tabs-items {
@@ -283,4 +282,17 @@
     .product-tabs .tabs-items {
         overflow-x: scroll;
     }
+}
+
+@media (max-width: 600px) {
+    .product-tabs .feedback-item {
+        .item-body {
+            margin: 20px 0 0 18px;
+        }
+    }
+
+    .product-tabs .feedback-item {
+        margin-top: 25px;
+    }
+
 }
