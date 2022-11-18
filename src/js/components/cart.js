@@ -9,4 +9,15 @@ $(function () {
         $(".sidebar").removeClass("active");
         $("body").removeClass("activeBody");
     });
+
+
+    setTimeout(function () {
+        $('.loader-screen').animate({
+            height: '100%',
+            top: '-100vh'
+        }, 1000, function () {
+            $(".loader-screen").css("display", 'none');
+        })
+    }, 200);
+
 })

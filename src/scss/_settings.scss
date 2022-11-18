@@ -311,8 +311,85 @@ body.activeBody .main-wrapperOverflow {
     background-color: $tuliptree;
 }
 
-// .hamburger:hover .hamburger-bar,
-// .hamburger:after,
-// .hamburger:before {
-//     background-color: red;
-// }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: $codgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-repeat: 9rem;
+    background-color: $tuliptree;
+}
+
+
+.loader-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $codgray;
+    z-index: 9990000;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.ball-rotate {
+    position: relative;
+    transform: scale(2);
+}
+
+.ball-rotate>div {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    animation-fill-mode: both;
+    position: relative;
+}
+
+.ball-rotate>div:first-child {
+    animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
+}
+
+.ball-rotate>div:before,
+.ball-rotate>div:after {
+    content: "";
+    background-color: $tuliptree;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.ball-rotate>div:before {
+    top: 0;
+    left: -28px;
+}
+
+.ball-rotate>div:after {
+    top: 0;
+    left: 25px;
+}
