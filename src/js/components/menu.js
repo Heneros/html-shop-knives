@@ -9,7 +9,7 @@ document.querySelectorAll('.js-select').forEach(e => {
                 e.classList.remove('select-header__visible');
                 e.classList.remove('open');
                 document.querySelector(`[data-target=${menu}]`).classList.add('select-header__visible');
-               
+
                 intervalId = setTimeout(() => {
                     document.querySelector(`[data-target=${menu}]`).classList.add('open');
                 }, 0);
@@ -34,6 +34,20 @@ document.querySelectorAll('.js-select').forEach(e => {
         })
     })
 });
+
+window.addEventListener('scroll', function () {
+    var header = document.querySelector('.header');
+    if (window.scrollY > 135) {
+        header.classList.add("sticky");
+    } else if (window.scrollY < 50) {
+        header.classList.remove("sticky");
+    }
+})
+
+
+
+
+
 
 // console.log(window.scrollY);
 // window.addEventListener('scroll', function () {
@@ -106,7 +120,7 @@ toggleMenu.addEventListener("click", function () {
     header__search.classList.toggle('visible');
     body.classList.toggle('noOverflow');
 
-    
+
     if (!this.classList.contains(isVisibleClass)) {
         listWrapper2.classList.remove(isVisibleClass);
         listWrapper3.classList.remove(isVisibleClass);

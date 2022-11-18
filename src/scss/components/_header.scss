@@ -1,10 +1,17 @@
 .header {
+
     // position: fixed;
     // top: 0;
     // left: 0;
     // width: 100%;
+    // height: 175px;
     // transition: top 0.1s ease;
-    // z-index: 999;
+    // z-index: 9999;
+    height: 175px;
+    z-index: 9999;
+    position: relative;
+    transition: top 0.3s ease;
+    margin-bottom: 2%;
 
     &__first-line {
         padding: 25px 0;
@@ -47,6 +54,7 @@
         }
 
     }
+
     &__profile-name {
         flex-basis: 47%;
         color: #fff;
@@ -454,13 +462,20 @@
     visibility: visible;
 }
 
-.sticky {
+// .sticky {
+//     transition: top 0.3s ease, height 0.3s;
+//     top: 0px;
+//     height: 218px;
+// }
+
+.header.sticky {
+    transition: top 0.5s ease, height 0.5s;
+    top: 175px;
+    height: 218px;
     position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
-    transition: top 0.3s ease, height 0.3s;
-    height: 106px;
 }
 
 @media(max-width: 1460px) {
@@ -850,7 +865,7 @@
         }
     }
 
-    .page-header .list-wrapper {}
+
 
     .list-wrapper {
         width: 100%;
