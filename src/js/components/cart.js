@@ -1,13 +1,15 @@
 $(function () {
 
     $(document.body).on("click", ".js-open-cart", function () {
-        $(".sidebar").addClass("active");
-        $("body").addClass("activeBody");
+        $(".cart-products").toggleClass("active");
+        // alert(123);
     });
 
-    $(document.body).on("click", ".main-wrapperOverflow", function () {
-        $(".sidebar").removeClass("active");
-        $("body").removeClass("activeBody");
+    $(document.body).on("click", function (e) {
+        if (!$(e.target).closest(".cart-products").length && !$(e.target).closest(".js-open-cart").length) {
+            $(".cart-products").removeClass("active");
+        }
+        e.stopPropagation();
     });
 
 

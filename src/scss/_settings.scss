@@ -274,10 +274,8 @@ img {
     transition: all .3s linear;
 }
 
-.sidebar.active {
-    right: 0;
-    z-index: 99370;
-    overflow-y: auto;
+.cart-products.active {
+    display: block;
 }
 
 .activeBody {
@@ -291,7 +289,7 @@ body.activeBody .main-wrapperOverflow {
     left: 0;
     right: 0;
     background: rgba(26, 26, 26, 0.8);
-    z-index: 350;
+    z-index: 999909;
     bottom: 0;
     display: block;
 }
