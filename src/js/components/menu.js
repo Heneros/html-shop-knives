@@ -1,4 +1,10 @@
 /////menu
+AOS.init({
+    easing: 'ease-out-back',
+    duration: 2700
+});
+
+
 let intervalId;
 document.querySelectorAll('.js-select').forEach(e => {
     e.addEventListener('click', e => {

@@ -648,6 +648,11 @@
             // right: 10px;
             top: -5px;
         }
+
+        .cart-products.active {
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     .header__left {
@@ -681,14 +686,8 @@
         height: 25px;
 
         &:hover {
-            // content: "";
-            // position: absolute;
-            // top: -1px;
-            // right: 16px;
             position: relative;
             display: block;
-            // width: 28px;
-            // height: 27px;
             background: url('../img/favorites-hover.svg') no-repeat center center;
             ;
         }
